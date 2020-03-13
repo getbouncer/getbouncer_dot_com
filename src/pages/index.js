@@ -31,7 +31,11 @@ class Index extends React.Component {
           This is a very long paragraph that contains a lot of information and lists it all out for the user to be able to see.
         </Paragraph>
         <Donut>
-          <Phone x={-300} y={110} width={300}/>
+          <Phone x={-95} y={110} width={300}/>
+        </Donut>
+        <Donut innerRadius={50} outerRadius={75}>
+          <Header> Text </Header>
+          <Paragraph>  Ya yeet is paragraph  </Paragraph>
         </Donut>
       </div>
     )

@@ -26,8 +26,10 @@ class Donut extends React.Component {
           style={{
             paddingLeft: 0,
             paddingRight: 0,
-            top: -this.props.width,
-            left: this.props.width / 2
+            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width,
+            left: (this.props.width / 2) - ((this.props.innerRadius / 100) * this.props.width),
+            width: (this.props.innerRadius * 2 / 100) * this.props.width,
+            height: (this.props.innerRadius * 2 / 100) * this.props.width
           }}>
           {this.props.children}
         </div>
