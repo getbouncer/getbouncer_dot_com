@@ -1,0 +1,8 @@
+.wrapper {
+  display: contents;
+  width: 100%;
+}
+
+.phone {
+  position: absolute;
+}

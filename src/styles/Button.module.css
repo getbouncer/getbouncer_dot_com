@@ -1,0 +1,16 @@
+/* Generic component styles */
+
+.btn {
+  background-color: #3333FF;
+  border: 0px solid transparent;
+  border-radius: 14px;
+  color: white;
+  filter: brightness(1);
+  font-size: 18px;
+  padding: 7px;
+  transition: all 0.25s;
+}
+
+.btn:hover {
+  filter: brightness(0.75);
+}
