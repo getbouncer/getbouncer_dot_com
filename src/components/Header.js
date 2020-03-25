@@ -19,4 +19,8 @@ Header.propTypes = {
   textAlign: PropTypes.string
 };
 
+Header.defaultProps = {
+  textAlign: "center"
+};
+
 export default Header;

@@ -1,5 +1,16 @@
 .footer {
   background-color: white;
-  color: rgb(25, 67, 184);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
   width: 100%;
+}
+
+.links {
+  flex-grow: 1;
+}
+
+.icon {
+  padding-left: 10px;
 }
