@@ -111,3 +111,12 @@
   color: #1d1d1d;
   font-family: 'Poppins';
 }
+
+svg {
+   display: block;
+   overflow: visible !important;
+ }
+
+ row {
+    justify-content: center;
+ }

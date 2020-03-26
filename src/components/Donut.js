@@ -3,13 +3,35 @@ import PropTypes from 'prop-types';
 import styles from '../styles/Donut.module.css';
 
 class Donut extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      width: this.props.width
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < this.state.width) {
+        this.setState({
+          width: window.innerWidth
+        })
+      }
+    });
+  }
+
   render() {
     return(
       <div className={styles.donut}
         style={{
-          width: this.props.width
+          width: this.props.width,
+          height: this.props.width,
+          textAlign: 'center'
         }}>
-        <svg width={this.props.width} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible">
+        <svg width={this.props.width} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible" style={{
+            textAlign: 'center'
+          }}>
           <defs>
             <linearGradient id="blue-green"
               x1="0%" y1="100%" x2="100%" y2="0%" gradientTransform={`rotate(${this.props.rotation})`}>
@@ -22,7 +44,7 @@ class Donut extends React.Component {
           <circle cx={this.props.x} cy={this.props.y} r={this.props.outerRadius} fill="url('#blue-green')" />
           <circle cx={this.props.x} cy={this.props.y} r={this.props.innerRadius} fill="white" />
         </svg>
-        <div className={styles.content}
+        <div className={styles.innerdonut}
           style={{
             paddingLeft: 0,
             paddingRight: 0,

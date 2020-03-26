@@ -7,6 +7,7 @@ import Paragraph from '../components/Paragraph';
 import Donut from '../components/Donut';
 import Phone from '../components/Phone';
 import Footer from '../components/Footer';
+import SectionOne from './sections (temporary)/section_one';
 
 class Index extends React.Component {
   constructor(props) {
@@ -22,29 +23,8 @@ class Index extends React.Component {
     return (
       <div>
         {index_lang.title[this.state.lang]}
-        <Button action={() => console.log("Contact Us!")}>
-          Contact Us
-        </Button>
-        <Header textAlign="center">
-          This is a header
-        </Header>
-        <Paragraph>
-          This is a very long paragraph that contains a lot of information and lists it all out for the user to be able to see.
-        </Paragraph>
-        <Donut>
-          <Phone x={-95} y={110} width={300}/>
-        </Donut>
-        <Donut innerRadius={50} outerRadius={75}>
-          <Header> Text </Header>
-          <Paragraph>  Ya yeet is paragraph  </Paragraph>
-        </Donut>
-        <section>
-          <div>
-            <Header textAlign="left">
-              Saving good users from frausters with cutting-edge technology
-            </Header>
-          </div>
-        </section>
+
+        <SectionOne></SectionOne>
         <Footer>
 
         </Footer>

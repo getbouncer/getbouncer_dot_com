@@ -1,8 +1,8 @@
 .donut {
-  height: 100%;
+  overflow: visible;
   text-align: center;
 }
 
-.content {
+.innerdonut {
   position: relative;
 }

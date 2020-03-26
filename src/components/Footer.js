@@ -18,9 +18,9 @@ class Footer extends React.Component {
           Terms &amp; Conditions
         </div>
         <div>
-          <FontAwesomeIcon icon={faFacebook} size='lg' className={styles.icon}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faTwitter} size='lg' className={styles.icon}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faSlack} size='lg' className={styles.icon}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faFacebook} size='2x' className={styles.icon} style></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faTwitter} size='2x' className={styles.icon}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faSlack} size='2x' className={styles.icon}></FontAwesomeIcon>
         </div>
       </div>
     )
