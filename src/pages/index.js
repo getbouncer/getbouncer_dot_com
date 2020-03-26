@@ -6,8 +6,10 @@ import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Donut from '../components/Donut';
 import Phone from '../components/Phone';
+import NavigationBar from '../components/NavigationBar'
 import Footer from '../components/Footer';
 import SectionOne from './sections (temporary)/section_one';
+
 
 class Index extends React.Component {
   constructor(props) {
@@ -21,9 +23,10 @@ class Index extends React.Component {
   }
   render() {
     return (
-      <div>
-        {index_lang.title[this.state.lang]}
 
+      <div>
+        <NavigationBar> </NavigationBar>
+          {index_lang.title[this.state.lang]}
         <SectionOne></SectionOne>
         <Footer>
 
