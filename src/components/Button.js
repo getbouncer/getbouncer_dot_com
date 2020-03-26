@@ -23,4 +23,10 @@ Button.propTypes = {
   backgroundColor: PropTypes.string
 };
 
+Button.defaultProps = {
+  action: () => {console.log('Action')},
+  color: 'white',
+  backgroundColor: '#3333FF'
+}
+
 export default Button;
