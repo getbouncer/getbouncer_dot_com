@@ -1,0 +1,28 @@
+.Logo {
+  font-weight:600;
+  font-size: 1.3em;
+  color:#3333FF;
+}
+.Logo:hover {
+  text-decoration: none;
+  color:#3333FF;
+}
+
+.NavBar {
+    -webkit-box-shadow: 0px 40px 18px #f7f7f7;
+    -moz-box-shadow: 0px 40px 18px #f7f7f7;
+    box-shadow: 0px 40px 18px #f7f7f7;
+    display: flex;
+    margin-left: 2%;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+}
+.rhs {
+  display: flex;
+  flex-flow: row;
+  margin-right: 2%;
+}
+.tog {
+  color:#000000;
+}
