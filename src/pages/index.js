@@ -24,9 +24,9 @@ class Index extends React.Component {
     return (
 
       <div>
+
         <NavigationBar> </NavigationBar>
-        {index_lang.title[this.state.lang]}
-    
+
         <Header textAlign="center">
           This is a header
         </Header>

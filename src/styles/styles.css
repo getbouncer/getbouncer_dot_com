@@ -106,6 +106,22 @@
   }
 
 /* Default styles */
+.navbar-collapse.in {
+    display: block !important;
+}
+.navlink {
+  display: flex;
+  flex-direction: row;
+
+}
+.navbar {
+  -webkit-box-shadow: 0px 20px 18px #f7f7f7;
+  -moz-box-shadow: 0px 20px 18px #f7f7f7;
+  box-shadow: 0px 20px 18px #f7f7f7;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
 
 * {
   color: #1d1d1d;
