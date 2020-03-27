@@ -22,10 +22,12 @@ class Index extends React.Component {
       'lang': lang
     }
   }
+
   render() {
     return (
 
       <div>
+
         <NavigationBar> </NavigationBar>
         <SectionOne></SectionOne>
         <SectionSix></SectionSix>
