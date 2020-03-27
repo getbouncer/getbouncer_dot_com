@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import NavBar from 'react-bootstrap/NavBar';
 import {Nav} from 'react-bootstrap';
 import styles from '../styles/NavigationBar.module.css';
+import classNames from 'classnames';
 
 class NavigationBar extends React.Component {
 
@@ -21,8 +22,8 @@ class NavigationBar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarToggler">
 
           <nav className="ml-auto navlink" id="navbarSupportedContent">
-            <Nav.Link className={styles.tog} href="/"> Company</Nav.Link>
-            <Nav.Link className={styles.tog} href="/" > Documentation</Nav.Link>
+            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="/"> Company</Nav.Link>
+            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="/" > Documentation</Nav.Link>
             <Button action={() => console.log("go to contact us screen")}>
               Contact Us
             </Button>
