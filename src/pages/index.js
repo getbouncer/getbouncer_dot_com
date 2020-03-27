@@ -9,6 +9,7 @@ import Phone from '../components/Phone';
 import NavigationBar from '../components/NavigationBar'
 import Footer from '../components/Footer';
 import SectionOne from './sections (temporary)/section_one';
+import SectionSix from './sections (temporary)/section_six';
 
 
 class Index extends React.Component {
@@ -26,8 +27,8 @@ class Index extends React.Component {
 
       <div>
         <NavigationBar> </NavigationBar>
-          {index_lang.title[this.state.lang]}
         <SectionOne></SectionOne>
+        <SectionSix></SectionSix>
         <Footer>
 
         </Footer>

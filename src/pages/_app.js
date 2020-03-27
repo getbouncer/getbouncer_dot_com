@@ -14,8 +14,4 @@ export default function Bouncer({ Component, pageProps }) {
       <Component {...pageProps} />
     </div>
   )
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master

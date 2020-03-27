@@ -3,24 +3,6 @@ import PropTypes from 'prop-types';
 import styles from '../styles/Donut.module.css';
 
 class Donut extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      width: this.props.width
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', () => {
-      if (window.innerWidth < this.state.width) {
-        this.setState({
-          width: window.innerWidth
-        })
-      }
-    });
-  }
-
   render() {
     return(
       <div className={styles.donut}
@@ -48,7 +30,7 @@ class Donut extends React.Component {
           style={{
             paddingLeft: 0,
             paddingRight: 0,
-            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width,
+            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width + (((this.props.y - 50)/ 100) * this.props.width) + this.props.innerTop,
             left: (this.props.width / 2) - ((this.props.innerRadius / 100) * this.props.width),
             width: (this.props.innerRadius * 2 / 100) * this.props.width,
             height: (this.props.innerRadius * 2 / 100) * this.props.width
@@ -65,6 +47,7 @@ Donut.propTypes = {
   y: PropTypes.number,
   outerRadius: PropTypes.number,
   innerRadius: PropTypes.number,
+  innerTop: PropTypes.number,
   startColor: PropTypes.string,
   midColor: PropTypes.string,
   endColor: PropTypes.string,
@@ -77,6 +60,7 @@ Donut.defaultProps = {
   y: 50,
   outerRadius: 50,
   innerRadius: 30,
+  innerTop: 0,
   startColor: '#13FF9A',
   midColor: '#2FDAFF',
   endColor: '#3120FF',
