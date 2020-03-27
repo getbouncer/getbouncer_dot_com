@@ -6,8 +6,10 @@ import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Donut from '../components/Donut';
 import Phone from '../components/Phone';
-import NavigationBar from '../components/NavigationBar'
+import NavigationBar from '../components/NavigationBar';
 import Footer from '../components/Footer';
+import ListItem from '../components/ListItem';
+import List from '../components/List';
 
 
 class Index extends React.Component {
@@ -24,15 +26,21 @@ class Index extends React.Component {
     return (
 
       <div>
+
         <NavigationBar> </NavigationBar>
-        {index_lang.title[this.state.lang]}
-    
+
         <Header textAlign="center">
           This is a header
         </Header>
         <Paragraph>
           This is a very long paragraph that contains a lot of information and lists it all out for the user to be able to see.
-        </Paragraph>
+            </Paragraph>
+          <List>   This is a list
+            <ListItem> A list item </ListItem>
+            <ListItem> Another list item </ListItem>
+
+          </List>
+
         <Donut>
           <Phone x={-95} y={110} width={300}/>
         </Donut>
