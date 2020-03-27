@@ -1,8 +1,11 @@
 .donut {
-  height: 100%;
+  overflow: visible;
   text-align: center;
 }
 
-.content {
+.innerdonut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }

@@ -19,8 +19,8 @@ class Phone extends React.Component {
         <video autoPlay
           className={styles.phone}
           style={{
-            paddingLeft: this.props.width * 0.1,
-            paddingTop: this.props.width * 0.18,
+            marginLeft: this.props.width * 0.1,
+            marginTop: this.props.width * 0.18,
             width: this.props.width * 0.8
           }}
           src={this.props.src}/>

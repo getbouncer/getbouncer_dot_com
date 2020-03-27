@@ -9,7 +9,7 @@ export default function Bouncer({ Component, pageProps }) {
     <div>
       <head>
         <title>Get Bouncer</title>
-        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
       </head>
       <Component {...pageProps} />
