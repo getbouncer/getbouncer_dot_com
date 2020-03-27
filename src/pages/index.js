@@ -6,10 +6,12 @@ import Header from '../components/Header';
 import Paragraph from '../components/Paragraph';
 import Donut from '../components/Donut';
 import Phone from '../components/Phone';
-import NavigationBar from '../components/NavigationBar'
+import NavigationBar from '../components/NavigationBar';
 import Footer from '../components/Footer';
 import SectionOne from './sections (temporary)/section_one';
 import SectionSix from './sections (temporary)/section_six';
+import ListItem from '../components/ListItem';
+import List from '../components/List';
 
 
 class Index extends React.Component {
@@ -31,6 +33,11 @@ class Index extends React.Component {
         <NavigationBar> </NavigationBar>
         <SectionOne></SectionOne>
         <SectionSix></SectionSix>
+        <List>   This is a list
+          <ListItem> A list item </ListItem>
+          <ListItem> Another list item </ListItem>
+
+        </List>
         <Footer>
 
         </Footer>
