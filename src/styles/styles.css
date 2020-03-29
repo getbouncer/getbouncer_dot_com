@@ -128,3 +128,37 @@
   /* color: #1d1d1d; */
   font-family: 'Poppins';
 }
+
+svg {
+   display: block;
+   overflow: visible !important;
+ }
+
+section {
+   padding: 32px;
+   overflow: hidden;
+   width: 100%;
+}
+
+.section-one {
+   padding-top: 100px;
+   padding-bottom: 200px;
+}
+
+.section-six {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: -1000px;
+}
+
+.pad-center {
+   padding: 16;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.pad-percent {
+   padding: 10% !important;
+}

@@ -7,9 +7,13 @@ class Donut extends React.Component {
     return(
       <div className={styles.donut}
         style={{
-          width: this.props.width
+          width: this.props.width,
+          height: this.props.width,
+          textAlign: 'center'
         }}>
-        <svg width={this.props.width} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible">
+        <svg width={this.props.width} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible" style={{
+            textAlign: 'center'
+          }}>
           <defs>
             <linearGradient id="blue-green"
               x1="0%" y1="100%" x2="100%" y2="0%" gradientTransform={`rotate(${this.props.rotation})`}>
@@ -22,11 +26,11 @@ class Donut extends React.Component {
           <circle cx={this.props.x} cy={this.props.y} r={this.props.outerRadius} fill="url('#blue-green')" />
           <circle cx={this.props.x} cy={this.props.y} r={this.props.innerRadius} fill="white" />
         </svg>
-        <div className={styles.content}
+        <div className={styles.innerdonut}
           style={{
             paddingLeft: 0,
             paddingRight: 0,
-            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width,
+            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width + (((this.props.y - 50)/ 100) * this.props.width) + this.props.innerTop,
             left: (this.props.width / 2) - ((this.props.innerRadius / 100) * this.props.width),
             width: (this.props.innerRadius * 2 / 100) * this.props.width,
             height: (this.props.innerRadius * 2 / 100) * this.props.width
@@ -43,6 +47,7 @@ Donut.propTypes = {
   y: PropTypes.number,
   outerRadius: PropTypes.number,
   innerRadius: PropTypes.number,
+  innerTop: PropTypes.number,
   startColor: PropTypes.string,
   midColor: PropTypes.string,
   endColor: PropTypes.string,
@@ -55,6 +60,7 @@ Donut.defaultProps = {
   y: 50,
   outerRadius: 50,
   innerRadius: 30,
+  innerTop: 0,
   startColor: '#13FF9A',
   midColor: '#2FDAFF',
   endColor: '#3120FF',
