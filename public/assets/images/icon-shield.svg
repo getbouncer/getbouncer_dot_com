@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="89px" viewBox="0 0 74 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="72.5136886%" y1="-59.1345568%" x2="39.0156015%" y2="93.9762767%" id="linearGradient-1">
+            <stop stop-color="#12FF9C" offset="0%"></stop>
+            <stop stop-color="#0DC7FF" offset="50.3035262%"></stop>
+            <stop stop-color="#162FFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="62.7238058%" y1="-6.35146871%" x2="41.2986483%" y2="93.6761755%" id="linearGradient-2">
+            <stop stop-color="#162FFF" offset="0%"></stop>
+            <stop stop-color="#0DC7FF" offset="49.6964738%"></stop>
+            <stop stop-color="#12FF9C" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-134.5%" y="-134.5%" width="369.0%" height="369.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shield" transform="translate(-4.000000, -12.000000)">
+            <g id="Group" transform="translate(4.000000, 12.000000)">
+                <g id="Group-16">
+                    <path d="M73.9571515,0.136487413 C68.935577,4.76262028 62.1577377,7.13678345 55.6757874,8.63484639 C49.9080802,9.96818671 37.400036,10.5202357 36.9276217,10.5202357 C36.8996161,10.9137858 37.0124559,29.4066995 37.3526106,38.3137531 C37.6340968,45.6800072 38.7152736,52.9558091 41.0779587,59.9814152 C44.6867874,70.7126576 51.5880029,78.6056506 61.3909587,83.8460702 C65.0482349,85.8009583 73.6824112,89.1068603 73.9953781,89.0000188 L73.9571515,0.136487413 Z" id="Fill-4" fill="url(#linearGradient-1)" transform="translate(55.459452, 44.569517) scale(-1, 1) translate(-55.459452, -44.569517) "></path>
+                    <path d="M37.033625,0.136487413 C32.0120504,4.76262028 25.2342112,7.13678345 18.7522609,8.63484639 C12.9845537,9.96818671 0.476509501,10.5202357 0.00409513651,10.5202357 C-0.0239103884,10.9137858 0.0889293907,29.4066995 0.429084087,38.3137531 C0.710570275,45.6800072 1.79174707,52.9558091 4.15443215,59.9814152 C7.76326088,70.7126576 14.6644764,78.6056506 24.4674322,83.8460702 C28.1247084,85.8009583 36.7588847,89.1068603 37.0718515,89.0000188 L37.033625,0.136487413 Z" id="Fill-4-Copy" fill="url(#linearGradient-2)"></path>
+                    <ellipse id="Oval" fill="#FFFFFF" cx="37" cy="45.8484848" rx="14.4390244" ry="14.3838384"></ellipse>
+                    <polyline id="Path-2" stroke="#1444F3" stroke-width="2.52" transform="translate(37.900795, 45.583087) rotate(-8.000000) translate(-37.900795, -45.583087) " points="31.9041098 44.9249853 35.3040108 50.0996562 43.8974794 41.0665173"></polyline>
+                </g>
+                <g id="Group-2-Copy-2" filter="url(#filter-3)" transform="translate(22.560976, 31.464646)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

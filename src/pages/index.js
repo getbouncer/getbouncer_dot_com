@@ -10,6 +10,8 @@ import NavigationBar from '../components/NavigationBar';
 import Footer from '../components/Footer';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
+import Tile from '../components/Tile';
+
 
 
 class Index extends React.Component {
@@ -48,6 +50,14 @@ class Index extends React.Component {
           <Header> Text </Header>
           <Paragraph>  Ya yeet is paragraph  </Paragraph>
         </Donut>
+
+        <Tile
+          source="/assets/images/icon-easy.svg"
+          header = "header of tile"
+          paragraph ="I am the paragraph of the tile"
+        > </Tile>
+
+
         <section>
           <div>
             <Header textAlign="left">
