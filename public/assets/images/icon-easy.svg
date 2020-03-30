@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Group 18 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="9.1297451%" y1="72.7259636%" x2="90.3671364%" y2="18.2266136%" id="linearGradient-1">
+            <stop stop-color="#11FF9A" offset="0%"></stop>
+            <stop stop-color="#0CDAFF" offset="46.7403927%"></stop>
+            <stop stop-color="#180CFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M3.00101673,0 C1.34361504,0 0,1.36588174 0,3.05075027 L0,3.05075027 L0,26.3894817 C0,28.0745259 1.34361504,29.4404076 3.00101673,29.4404076 L3.00101673,29.4404076 L42.6153706,29.4404076 C44.2729451,29.4404076 45.6165602,28.0745259 45.6165602,26.3894817 L45.6165602,26.3894817 L45.6165602,3.05075027 C45.6165602,1.36588174 44.2729451,0 42.6153706,0 L42.6153706,0 L3.00101673,0 Z" id="path-2"></path>
+        <linearGradient x1="97.902577%" y1="30.6432844%" x2="0%" y2="70.8263219%" id="linearGradient-4">
+            <stop stop-color="#10F2BF" offset="0%"></stop>
+            <stop stop-color="#1725FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.9612476%" y1="3.52824242%" x2="35.4274567%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#10F2BF" offset="0%"></stop>
+            <stop stop-color="#1725FF" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-6" points="0.0215429166 0.0122415762 6.03310946 0.0122415762 6.03310946 15.3776531 0.0215429166 15.3776531"></polygon>
+        <linearGradient x1="57.332391%" y1="3.52824242%" x2="42.3465589%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#10F2BF" offset="0%"></stop>
+            <stop stop-color="#1725FF" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-9" points="0 0.0122415762 6.04480858 0.0122415762 6.04480858 15.3776531 0 15.3776531"></polygon>
+        <linearGradient x1="57.4137176%" y1="3.52824242%" x2="42.2616714%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#10F2BF" offset="0%"></stop>
+            <stop stop-color="#1725FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="easy" transform="translate(-98.000000, -41.000000)">
+            <g id="Group-18-Copy" transform="translate(98.000000, 41.000000)">
+                <g id="Group-17">
+                    <circle id="Oval" stroke="url(#linearGradient-1)" stroke-width="7.5" cx="42.0409836" cy="42.0409836" r="38.2909836"></circle>
+                    <g id="Group-12" transform="translate(21.114754, 20.737705)">
+                        <g id="Group-2-Copy" transform="translate(0.000000, 6.032787)">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <path d="M3.00101673,0 C1.34361504,0 0,1.36588174 0,3.05075027 L0,3.05075027 L0,26.3894817 C0,28.0745259 1.34361504,29.4404076 3.00101673,29.4404076 L3.00101673,29.4404076 L42.6153706,29.4404076 C44.2729451,29.4404076 45.6165602,28.0745259 45.6165602,26.3894817 L45.6165602,26.3894817 L45.6165602,3.05075027 C45.6165602,1.36588174 44.2729451,0 42.6153706,0 L42.6153706,0 L3.00101673,0 Z" id="Fill-3" fill="url(#linearGradient-4)" mask="url(#mask-3)"></path>
+                            <polygon id="Fill-6" fill="#FFFFFF" mask="url(#mask-3)" points="0 11.0057599 45.6165602 11.0057599 45.6165602 6.87859991 0 6.87859991"></polygon>
+                        </g>
+                        <rect id="Rectangle" fill="url(#linearGradient-5)" x="32.4134482" y="0" width="38.4717977" height="71.2622951" rx="6"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="35.1614337" y="2.75143996" width="32.9758266" height="65.4842712" rx="3.375"></rect>
+                        <g id="Group-7" transform="translate(45.603779, 27.789544)">
+                            <g id="Group-3" transform="translate(6.045568, 0.000000)">
+                                <mask id="mask-7" fill="white">
+                                    <use xlink:href="#path-6"></use>
+                                </mask>
+                                <g id="Clip-2"></g>
+                                <path d="M0.0270024308,0.012506441 C0.0243450382,0.0115027713 0.0161735558,0.0129724305 0.0270024308,0.0235826527 C0.842954835,0.822898008 1.9326519,1.23311214 2.98594268,1.49195138 C3.92317184,1.72232941 5.95567859,1.81771388 6.03244402,1.81771388 C6.0369948,1.8857125 6.01865879,5.08096658 5.96338502,6.61995064 C5.91767787,7.89271131 5.741991,9.14984342 5.35803099,10.363746 C4.77164409,12.2179182 3.6502244,13.5816902 2.05728361,14.4871437 C1.46295775,14.8249143 0.0840367199,15.3956798 0.033214086,15.3772194" id="Fill-1" fill="url(#linearGradient-8)" mask="url(#mask-7)"></path>
+                            </g>
+                            <g id="Group-6">
+                                <mask id="mask-10" fill="white">
+                                    <use xlink:href="#path-9"></use>
+                                </mask>
+                                <g id="Clip-5"></g>
+                                <path d="M6.0393189,0.012506441 C6.04199097,0.0115027713 6.0502076,0.0129724305 6.0393189,0.0235826527 C5.21882507,0.822898008 4.12310758,1.23311214 3.06399751,1.49195138 C2.12159029,1.72232941 0.0778542264,1.81771388 0.000664678612,1.81771388 C-0.00391124871,1.8857125 0.0145260643,5.08096658 0.0701052107,6.61995064 C0.11609829,7.89271131 0.292755806,9.14984342 0.678803747,10.363746 C1.26846375,12.2179182 2.39607913,13.5816902 3.9978207,14.4871437 C4.59539672,14.8249143 5.9819361,15.3956798 6.03307293,15.3772194" id="Fill-4" fill="url(#linearGradient-11)" mask="url(#mask-10)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
