@@ -12,6 +12,8 @@ import SectionOne from './sections (temporary)/section_one';
 import SectionSix from './sections (temporary)/section_six';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
+import Tile from '../components/Tile';
+
 
 
 class Index extends React.Component {
@@ -37,7 +39,12 @@ class Index extends React.Component {
           <ListItem> A list item </ListItem>
           <ListItem> Another list item </ListItem>
 
-        </List>
+          <Tile
+            source="/assets/images/icon-easy.svg"
+            header = "header of tile"
+            paragraph ="I am the paragraph of the tile"
+          > </Tile>
+
         <Footer>
 
         </Footer>
