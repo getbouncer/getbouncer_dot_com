@@ -5,27 +5,39 @@ import styles from '../styles/Phone.module.css';
 class Phone extends React.Component {
   render() {
     return (
-      <div className={styles.phone}
-        style={{
-          width: this.props.width,
-          left: this.props.x,
-          top: this.props.y
-        }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        position: 'relative',
+        marginTop: this.props.y,
+        marginLeft: this.props.x
+      }}>
+        <div style={{
+        width: this.props.width,
+        height: 1.997 * this.props.width
+      }}>
         <img className={styles.phone}
-          style={{
-            width: this.props.width
-          }}
-          src="/assets/images/phone.svg"/>
+            style={{
+              width: this.props.width,
+              left: 0,
+              top: 0,
+              position: 'absolute'
+            }}
+            src="/assets/images/phone.svg"/>
         <video autoPlay
+          loop
           className={styles.phone}
           style={{
-            marginLeft: this.props.width * 0.1,
-            marginTop: this.props.width * 0.18,
-            width: this.props.width * 0.8
+            width: this.props.width * 0.8,
+            left: this.props.width * 0.1,
+            top: this.props.width * 0.17,
+            position: 'absolute'
           }}
           src={this.props.src}/>
+        </div>
       </div>
-    )
+      
+      )
   }
 }
 

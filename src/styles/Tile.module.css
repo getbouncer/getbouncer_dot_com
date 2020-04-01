@@ -1,6 +1,4 @@
 .tileContainer {
   text-align: center;
-}
-.headerContainer {
-
+  max-width: 300px;
 }

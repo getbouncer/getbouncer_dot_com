@@ -9,7 +9,7 @@ class ListItem extends React.Component {
     return(
       <React.Fragment>
 
-      <li className={styles.listitem}><FontAwesomeIcon icon={faCheckCircle} size='sm' className={styles.checkicon}></FontAwesomeIcon>{this.props.children} </li>
+      <li className={styles.listitem}><FontAwesomeIcon icon={faCheckCircle} size='lg' className={styles.checkicon}></FontAwesomeIcon>{this.props.children} </li>
       </React.Fragment>
     )
   }
