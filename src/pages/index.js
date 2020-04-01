@@ -13,6 +13,7 @@ import SectionSix from './sections (temporary)/section_six';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
 import Tile from '../components/Tile';
+import Portrait from '../components/Portrait';
 
 
 
