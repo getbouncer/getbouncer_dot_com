@@ -11,7 +11,6 @@ import Footer from '../components/Footer';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
 import Tile from '../components/Tile';
-import Portrait from '../components/Portrait';
 
 
 
@@ -198,8 +197,8 @@ componentWillUnmount() {
             </div>
             <div className="row">
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile avatar="yes" source="/assets/images/Profile_Photo.jpg"
-                header="Will Megson"
+                <Tile avatar="yes" source="/assets/images/default.svg"
+                header="Test"
                 size={150}
                 borderRadius="50%">
                   {index_lang.section_five.tile_one[this.state.lang]}
