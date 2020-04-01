@@ -16,8 +16,12 @@ class Tile extends React.Component {
   render() {
     return (
             <div className={styles.tileContainer}>
-            <img className={styles.icon} src={this.state.source} style={{
-              height: this.props.size}}/>
+            <img className={styles.icon}
+            src={this.state.source}
+            style={{
+              borderRadius: this.props.borderRadius,
+              height: this.props.size}}
+              />
             <Header className={styles.headerContainer} size="m">{this.state.header} </Header>
             <Paragraph>{this.props.children} </Paragraph>
             </div>
@@ -29,13 +33,15 @@ class Tile extends React.Component {
 Tile.propTypes = {
   size: PropTypes.number,
   source: PropTypes.string,
-  header: PropTypes.string
+  header: PropTypes.string,
+  borderRadius: PropTypes.PropTypes.string
 }
 
 Tile.defaultProps = {
   size: 100,
   source: '/assets/images/icon-easy.svg',
-  header: 'Header'
+  header: 'Header',
+  borderRadius: "0%"
 };
 
 export default Tile;
