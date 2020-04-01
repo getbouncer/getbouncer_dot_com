@@ -11,7 +11,7 @@ class Donut extends React.Component {
           height: this.props.width,
           textAlign: 'center'
         }}>
-        <svg width={this.props.width} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible" style={{
+        <svg width={`${this.props.width}px`} height={`${this.props.width}px`} viewBox={`0 0 100 100`} xmlns="http://www.w3.org/2000/svg" overflow="visible" style={{
             textAlign: 'center'
           }}>
           <defs>
@@ -30,10 +30,10 @@ class Donut extends React.Component {
           style={{
             paddingLeft: 0,
             paddingRight: 0,
-            top: (this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width + (((this.props.y - 50)/ 100) * this.props.width) + this.props.innerTop,
-            left: (this.props.width / 2) - ((this.props.innerRadius / 100) * this.props.width),
+            top: ((this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width + (((this.props.y - 50)/ 100) * this.props.width)) * 0.55 + this.props.innerTop,
             width: (this.props.innerRadius * 2 / 100) * this.props.width,
-            height: (this.props.innerRadius * 2 / 100) * this.props.width
+            height: (this.props.innerRadius * 2 / 100) * this.props.width,
+            position: 'absolute'
           }}>
           {this.props.children}
         </div>

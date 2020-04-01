@@ -4,9 +4,10 @@
   "description": "Website for bouncer and it's products.",
   "main": "src/pages/index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8080",
+    "deploy": "gcloud --project=getbouncer-web app deploy --promote --version main",
     "test": "jest"
   },
   "repository": {
@@ -31,9 +32,10 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
+    "express": "^4.17.1",
     "get-user-locale": "^1.3.0",
     "jquery": "^3.4.1",
-    "next": "^9.2.2",
+    "next": "^9.3.2",
     "ngrok": "^3.2.7",
     "popper": "^1.0.1",
     "popper.js": "^1.16.1",

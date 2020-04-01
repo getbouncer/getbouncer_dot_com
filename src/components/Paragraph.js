@@ -22,7 +22,6 @@ Paragraph.propTypes = {
 
 Paragraph.defaultProps = {
   textAlign: 'center',
-  size: 'm'
 };
 
 export default Paragraph;

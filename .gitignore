@@ -81,6 +81,7 @@ web_modules/
 # Nuxt.js build / generate output
 .nuxt
 dist
+build
 
 # Gatsby files
 .cache/
@@ -105,6 +106,9 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+.vscode
 
 # virtual environment for app engine testing
 venv
+
+lib

@@ -141,15 +141,14 @@ section {
 }
 
 .section-one {
-   padding-top: 100px;
-   padding-bottom: 200px;
+   padding-bottom: 120px;
 }
 
 .section-six {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-bottom: -1000px;
+   margin-bottom: -1200px;
 }
 
 .pad-center {
@@ -159,6 +158,41 @@ section {
    justify-content: center;
 }
 
+.pad-middle {
+   padding: 16;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
 .pad-percent {
    padding: 10% !important;
+}
+
+.pad-tile{
+   padding-bottom: 50px;
+}
+
+.tri-row-header {
+   max-width: 1000px;
+}
+
+.tri-row {
+   max-width: 1920px;
+   width: 100%;
+}
+
+.site-body {
+   overflow: hidden;
+   width: 100%;
+}
+
+.text-blue {
+   color: blue;
+}
+
+.donut-paragraph {
+   max-width: 100vw;
+   width: 500px;
+   position: relative;
 }

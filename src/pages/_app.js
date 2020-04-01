@@ -7,11 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Bouncer({ Component, pageProps }) {
   return (
     <div>
-      <head>
-        <title>Get Bouncer</title>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-      </head>
+      <title>Get Bouncer</title>
       <Component {...pageProps} />
     </div>
   )
