@@ -7,22 +7,35 @@ import styles from '../styles/Tile.module.css';
 class Tile extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       source: this.props.source,
       header: this.props.header,
-      paragraph: this.props.paragraph
     }
   }
   render() {
     return (
             <div className={styles.tileContainer}>
-            <img className={styles.icon} src={this.state.source}/>
-            <Header className={styles.headerContainer}>{this.state.header} </Header>
-            <Paragraph>{this.state.paragraph} </Paragraph>
+            <img className={styles.icon} src={this.state.source} style={{
+              height: this.props.size}}/>
+            <Header className={styles.headerContainer} size="m">{this.state.header} </Header>
+            <Paragraph>{this.props.children} </Paragraph>
             </div>
 
     )
   }
 }
+
+Tile.propTypes = {
+  size: PropTypes.number,
+  source: PropTypes.string,
+  header: PropTypes.string
+}
+
+Tile.defaultProps = {
+  size: 100,
+  source: '/assets/images/icon-easy.svg',
+  header: 'Header'
+};
 
 export default Tile;

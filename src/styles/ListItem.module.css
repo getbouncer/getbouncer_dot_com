@@ -5,6 +5,8 @@
 
 .listitem {
     font-weight: 400;
-    font-size: 12px;
-
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
 }

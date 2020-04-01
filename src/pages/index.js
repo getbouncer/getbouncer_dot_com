@@ -8,8 +8,6 @@ import Donut from '../components/Donut';
 import Phone from '../components/Phone';
 import NavigationBar from '../components/NavigationBar';
 import Footer from '../components/Footer';
-import SectionOne from './sections (temporary)/section_one';
-import SectionSix from './sections (temporary)/section_six';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
 import Tile from '../components/Tile';
@@ -27,27 +25,228 @@ class Index extends React.Component {
     }
   }
 
+  /**
+   * Contains special conditions for the second donut
+   */
+  componentDidMount() {
+    var _this = this;
+    var screen_size = '';
+
+    if (window.innerWidth < 992) {
+      _this.setState({
+        s3_phone_x: 0,
+        s3_paragraph_padleft: '10%',
+        s3_paragraph_padright: '10%',
+        screen_state: 'Medium'
+      });
+    } else {
+      _this.setState({
+        s3_phone_x: 500,
+        s3_paragraph_padleft: '17%',
+        s3_paragraph_padright: '8%',
+        screen_state: 'Large'
+      });
+    }
+
+    function _modifyPage() {
+      if (window.innerWidth < 992 && _this.state.screen_state == 'Large') {
+        _this.setState({
+          s3_phone_x: 0,
+          s3_paragraph_padleft: '10%',
+          s3_paragraph_padright: '10%',
+          screen_state: 'Medium'
+        });
+      } else if (window.innerWidth >= 992 && _this.state.screen_state == 'Medium'){
+        _this.setState({
+          s3_phone_x: 500,
+          s3_paragraph_padleft: '17%',
+          s3_paragraph_padright: '8%',
+          screen_state: 'Large'
+        });
+      }
+    }
+
+    window.addEventListener('resize', _modifyPage);
+
+    _modifyPage();
+}
+
+componentWillUnmount() {
+    window.removeEventListener('resize');
+}
+
   render() {
     return (
-
-      <div>
-
-        <NavigationBar> </NavigationBar>
-        <SectionOne></SectionOne>
-        <SectionSix></SectionSix>
-        <List>   This is a list
-          <ListItem> A list item </ListItem>
-          <ListItem> Another list item </ListItem>
-
-          <Tile
-            source="/assets/images/icon-easy.svg"
-            header = "header of tile"
-            paragraph ="I am the paragraph of the tile"
-          > </Tile>
-
-        <Footer>
-
-        </Footer>
+      <div className="site-body">
+        <NavigationBar></NavigationBar>
+        <section className="section-one">
+          <div className="row">
+            <div className="col-lg-6 align-self-center pad-percent">
+              <Header textAlign="left">
+                {index_lang.section_one.header[this.state.lang]}
+              </Header>
+              <Paragraph textAlign="left">
+                {index_lang.section_one.paragraph[this.state.lang]}
+              </Paragraph>
+              <Button>
+                {index_lang.contact[this.state.lang]}
+              </Button>
+            </div>
+            <div className="col-lg-6 align-self-center pad-center">
+              <Donut width={650} innerRadius={35} innerTop={550}>
+                <Phone width={300}/>
+              </Donut>
+            </div>
+          </div>
+        </section>
+        <section className="pad-center">
+          <div className="tri-row">
+            <div className="row pad-tile">
+              <Header textAlign="center" size="l">{index_lang.section_two.header[this.state.lang]}</Header>
+            </div>
+            <div className="row">
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/icon-easy.svg"
+                header = "Easy to use">
+                  {index_lang.section_two.ease[this.state.lang]}
+                </Tile>
+              </div>
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/icon-conversion.svg"
+                header = "Higher Conversion">
+                  {index_lang.section_two.conversion[this.state.lang]}
+                </Tile>
+              </div>
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/icon-shield.svg"
+                header = "Intuitive design">
+                  {index_lang.section_two.intuitive[this.state.lang]}
+                </Tile>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="row">
+            <div className="col-lg-6 align-self-center pad-center phone-align pad-tile">
+              <Donut width={650} innerRadius={35} innerTop={400}>
+                <Phone x={this.state.s3_phone_x} width={300}/>
+              </Donut>
+            </div>
+            <div className="col-lg-6 align-self-center"
+              style={{
+                paddingLeft: this.state.s3_paragraph_padleft,
+                paddingRight: this.state.s3_paragraph_padright,
+                flexDirection: 'column'
+              }}>
+              <Header textAlign="left">
+                {index_lang.section_three.header[this.state.lang]}
+              </Header>
+              <Paragraph textAlign="left">
+                {index_lang.section_three.paragraph[this.state.lang]}
+              </Paragraph>
+              <List>
+                <ListItem>
+                  {index_lang.section_three.list_item_one[this.state.lang]}
+                </ListItem>
+                <ListItem>
+                  {index_lang.section_three.list_item_two[this.state.lang]}
+                </ListItem>
+                <ListItem>
+                  {index_lang.section_three.list_item_three[this.state.lang]}
+                </ListItem>
+              </List>
+              <Button>
+              {index_lang.contact[this.state.lang]}
+              </Button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="row">
+            <div className="col-lg-6 align-self-center pad-percent">
+              <Paragraph className="text-blue" textAlign="left">
+                {index_lang.section_four.soon[this.state.lang]}         
+              </Paragraph>
+              <Paragraph textAlign="left">
+                ID Scan + ID Verify
+              </Paragraph>
+              <Header textAlign="left">
+                {index_lang.section_four.header[this.state.lang]}
+              </Header>
+              <Paragraph textAlign="left">
+                {index_lang.section_four.paragraph[this.state.lang]}
+              </Paragraph>
+            </div>
+            <div className="col-lg-6 align-self-center pad-center">
+              <Phone width={300}/>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="tri-row">
+            <div className="row pad-center">
+              <div className="pad-tile tri-row-header">
+                <Header>
+                  {index_lang.section_five.header[this.state.lang]}
+                </Header>
+                <Paragraph>
+                  {index_lang.section_five.paragraph[this.state.lang]}
+                </Paragraph>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/default.svg"
+                header="Will Megson"
+                size={150}>
+                  {index_lang.section_five.tile_one[this.state.lang]}
+                </Tile>
+              </div>
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/default.svg"
+                header="Sam King"
+                size={150}>
+                  {index_lang.section_five.tile_two[this.state.lang]}
+                </Tile>
+              </div>
+              <div className="col-md-4 pad-middle pad-tile">
+                <Tile source="/assets/images/default.svg"
+                header="Will Megson"
+                size={150}>
+                  {index_lang.section_five.tile_three[this.state.lang]}
+                </Tile>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="section-six">
+          <div className="row">
+            <div className="col-lg-12 align-self-center">
+              <Donut width={1800} innerRadius={40} innerTop={600}>
+                <div className="donut-paragraph">
+                  <Header textAlign="center">
+                    {index_lang.section_six.header[this.state.lang]}
+                  </Header>
+                  <Paragraph textAlign="center">
+                    {index_lang.section_six.paragraph[this.state.lang]}
+                  </Paragraph>
+                  <div className="row">
+                    <div className="col-sm-6 pad-center">
+                      <Button>
+                        {index_lang.contact[this.state.lang]}
+                      </Button> 
+                    </div>
+                    <div className="col-sm-6 pad-center">
+                      <a>{index_lang.section_six.community[this.state.lang]}</a>
+                    </div>
+                  </div>
+                </div>
+              </Donut>
+            </div>
+          </div>
+        </section>
+        <Footer></Footer>
       </div>
     )
   }
