@@ -197,15 +197,15 @@ componentWillUnmount() {
             </div>
             <div className="row">
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile avatar="yes" source="/assets/images/default.svg"
-                header="Test"
+                <Tile avatar="yes" source="/assets/images/Will_Megson.jpeg"
+                header="Will Megson"
                 size={150}
                 borderRadius="50%">
                   {index_lang.section_five.tile_one[this.state.lang]}
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/default.svg"
+                <Tile source="/assets/images/Sam_King.jpg"
                 header="Sam King"
                 size={150}
                 borderRadius="50%">
@@ -213,7 +213,7 @@ componentWillUnmount() {
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/default.svg"
+                <Tile source="/assets/images/Other_Will.png"
                 header="Will Megson"
                 size={150}
                 borderRadius="50%"
