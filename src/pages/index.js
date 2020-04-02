@@ -166,7 +166,7 @@ componentWillUnmount() {
           <div className="row">
             <div className="col-lg-6 align-self-center pad-percent">
               <Paragraph className="text-blue" textAlign="left">
-                {index_lang.section_four.soon[this.state.lang]}         
+                {index_lang.section_four.soon[this.state.lang]}
               </Paragraph>
               <Paragraph textAlign="left">
                 ID Scan + ID Verify
@@ -197,23 +197,27 @@ componentWillUnmount() {
             </div>
             <div className="row">
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/default.svg"
+                <Tile avatar="yes" source="/assets/images/Will_Megson.jpeg"
                 header="Will Megson"
-                size={150}>
+                size={150}
+                borderRadius="50%">
                   {index_lang.section_five.tile_one[this.state.lang]}
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/default.svg"
+                <Tile source="/assets/images/Sam_King.jpg"
                 header="Sam King"
-                size={150}>
+                size={150}
+                borderRadius="50%">
                   {index_lang.section_five.tile_two[this.state.lang]}
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/default.svg"
+                <Tile source="/assets/images/Other_Will.png"
                 header="Will Megson"
-                size={150}>
+                size={150}
+                borderRadius="50%"
+                >
                   {index_lang.section_five.tile_three[this.state.lang]}
                 </Tile>
               </div>
@@ -235,7 +239,7 @@ componentWillUnmount() {
                     <div className="col-sm-6 pad-center">
                       <Button>
                         {index_lang.contact[this.state.lang]}
-                      </Button> 
+                      </Button>
                     </div>
                     <div className="col-sm-6 pad-center">
                       <a>{index_lang.section_six.community[this.state.lang]}</a>
@@ -246,6 +250,7 @@ componentWillUnmount() {
             </div>
           </div>
         </section>
+
         <Footer></Footer>
       </div>
     )
