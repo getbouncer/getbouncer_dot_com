@@ -183,7 +183,7 @@ componentWillUnmount() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="pad-center">
           <div className="tri-row">
             <div className="row pad-center">
               <div className="pad-tile tri-row-header">
@@ -213,11 +213,10 @@ componentWillUnmount() {
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/Other_Will.png"
-                header="Will Megson"
+                <Tile source="/assets/images/Steven_Liu.png"
+                header="Steven Liu"
                 size={150}
-                borderRadius="50%"
-                >
+                borderRadius="50%">
                   {index_lang.section_five.tile_three[this.state.lang]}
                 </Tile>
               </div>
@@ -250,7 +249,6 @@ componentWillUnmount() {
             </div>
           </div>
         </section>
-
         <Footer></Footer>
       </div>
     )

@@ -13,7 +13,7 @@ class MainDocument extends Document {
                 { this.props.head }
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-                <link rel="shortcut icon" href="/static/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
             <body>
             <Main />
