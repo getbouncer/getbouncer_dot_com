@@ -21,8 +21,11 @@
   display: flex;
   flex-flow: row;
   margin-right: 2%;
+
 }
 .tog {
   color:#000000;
   padding-left: 0;
+  font-weight: 400;
+  font-size: 0.9em;
 }
