@@ -109,19 +109,19 @@ componentWillUnmount() {
             </div>
             <div className="row">
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/icon-easy.svg"
+                <Tile source="/assets/images/icon-easy.svg" size={60}
                 header = "Easy to use">
                   {index_lang.section_two.ease[this.state.lang]}
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/icon-conversion.svg"
+                <Tile source="/assets/images/icon-conversion.svg" size={60}
                 header = "Higher Conversion">
                   {index_lang.section_two.conversion[this.state.lang]}
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/icon-shield.svg"
+                <Tile source="/assets/images/icon-shield.svg" size={60}
                 header = "Intuitive design">
                   {index_lang.section_two.intuitive[this.state.lang]}
                 </Tile>
@@ -170,7 +170,7 @@ componentWillUnmount() {
                 <span className="text-blue"> {index_lang.section_four.soon[this.state.lang]} </span> &nbsp; ID Scan + ID Verify
               </Paragraph>
               <Paragraph textAlign="left">
-                
+
               </Paragraph>
               <Header textAlign="left">
                 {index_lang.section_four.header[this.state.lang]}
@@ -197,7 +197,7 @@ componentWillUnmount() {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile avatar="yes" source="/assets/images/Will_Megson.jpeg"
                 header="Will Megson"
                 size={150}
@@ -205,7 +205,7 @@ componentWillUnmount() {
                   {index_lang.section_five.tile_one[this.state.lang]}
                 </Tile>
               </div>
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile source="/assets/images/Sam_King.jpg"
                 header="Sam King"
                 size={150}
@@ -213,7 +213,7 @@ componentWillUnmount() {
                   {index_lang.section_five.tile_two[this.state.lang]}
                 </Tile>
               </div>
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile source="/assets/images/Steven_Liu.png"
                 header="Steven Liu"
                 size={150}

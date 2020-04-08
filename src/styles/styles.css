@@ -170,6 +170,7 @@ section {
    display: flex;
    flex-direction: column;
    align-items: center;
+
 }
 
 .pad-percent {
@@ -177,10 +178,13 @@ section {
 }
 
 .pad-tile{
-
-   padding-bottom: 50px;
+   margin-bottom: 50px;
 }
 
+
+.row {
+  justify-content: center;
+}
 .tri-row-header {
    max-width: 800px;
 }
