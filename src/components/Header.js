@@ -20,7 +20,9 @@ class Header extends React.Component {
           textAlign: this.props.textAlign,
           fontSize: this.fontSizes[this.props.size.toLowerCase()]
         }}>
-        {this.props.children}
+        <b>
+          {this.props.children}
+        </b>
       </h1>
     );
   }

@@ -4,8 +4,8 @@
   border: 0px solid transparent;
   border-radius: 50px;
   filter: brightness(1);
-  font-size: 18px;
-  padding: 7px;
+  font-size: 14px;
+  padding: 11px;
   margin: 2px;
   transition: all 0.25s;
 }
