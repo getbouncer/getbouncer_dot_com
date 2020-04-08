@@ -1,7 +1,7 @@
 .Logo {
   font-weight:600;
   font-size: 1.3em;
-  color:#3333FF;
+  color:#3333FF !important;
 }
 .Logo:hover {
   text-decoration: none;

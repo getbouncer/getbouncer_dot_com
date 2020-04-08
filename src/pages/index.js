@@ -34,16 +34,16 @@ class Index extends React.Component {
 
     if (window.innerWidth < 992) {
       _this.setState({
+        s1_donut_x: 50,
+        s3_donut_x: 50,
         s3_phone_x: 0,
-        s3_paragraph_padleft: '10%',
-        s3_paragraph_padright: '10%',
         screen_state: 'Medium'
       });
     } else {
       _this.setState({
+        s1_donut_x: 65,
+        s3_donut_x: 20,
         s3_phone_x: 500,
-        s3_paragraph_padleft: '17%',
-        s3_paragraph_padright: '8%',
         screen_state: 'Large'
       });
     }
@@ -51,16 +51,16 @@ class Index extends React.Component {
     function _modifyPage() {
       if (window.innerWidth < 992 && _this.state.screen_state == 'Large') {
         _this.setState({
+          s1_donut_x: 50,
+          s3_donut_x: 50,
           s3_phone_x: 0,
-          s3_paragraph_padleft: '10%',
-          s3_paragraph_padright: '10%',
           screen_state: 'Medium'
         });
       } else if (window.innerWidth >= 992 && _this.state.screen_state == 'Medium'){
         _this.setState({
+          s1_donut_x: 65,
+          s3_donut_x: 20,
           s3_phone_x: 500,
-          s3_paragraph_padleft: '17%',
-          s3_paragraph_padright: '8%',
           screen_state: 'Large'
         });
       }
@@ -80,7 +80,10 @@ componentWillUnmount() {
       <div className="site-body">
         <NavigationBar></NavigationBar>
         <section className="section-one">
-          <div className="row">
+          <div className="row"
+            style={{
+              paddingBottom:30
+            }}>
             <div className="col-lg-6 align-self-center pad-percent">
               <Header textAlign="left">
                 {index_lang.section_one.header[this.state.lang]}
@@ -93,7 +96,7 @@ componentWillUnmount() {
               </Button>
             </div>
             <div className="col-lg-6 align-self-center pad-center">
-              <Donut width={650} innerRadius={35} innerTop={550}>
+              <Donut width={650} innerRadius={35} innerTop={550} x={this.state.s1_donut_x} y={40}>
                 <Phone width={300}/>
               </Donut>
             </div>
@@ -129,14 +132,12 @@ componentWillUnmount() {
         <section>
           <div className="row">
             <div className="col-lg-6 align-self-center pad-center phone-align pad-tile">
-              <Donut width={650} innerRadius={35} innerTop={400}>
+              <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x}>
                 <Phone x={this.state.s3_phone_x} width={300}/>
               </Donut>
             </div>
-            <div className="col-lg-6 align-self-center"
+            <div className="col-lg-6 align-self-center pad-percent"
               style={{
-                paddingLeft: this.state.s3_paragraph_padleft,
-                paddingRight: this.state.s3_paragraph_padright,
                 flexDirection: 'column'
               }}>
               <Header textAlign="left">
@@ -165,11 +166,11 @@ componentWillUnmount() {
         <section>
           <div className="row">
             <div className="col-lg-6 align-self-center pad-percent">
-              <Paragraph className="text-blue" textAlign="left">
-                {index_lang.section_four.soon[this.state.lang]}
+              <Paragraph textAlign="left">
+                <span className="text-blue"> {index_lang.section_four.soon[this.state.lang]} </span> &nbsp; ID Scan + ID Verify
               </Paragraph>
               <Paragraph textAlign="left">
-                ID Scan + ID Verify
+                
               </Paragraph>
               <Header textAlign="left">
                 {index_lang.section_four.header[this.state.lang]}
@@ -183,7 +184,7 @@ componentWillUnmount() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="pad-center">
           <div className="tri-row">
             <div className="row pad-center">
               <div className="pad-tile tri-row-header">
@@ -213,11 +214,10 @@ componentWillUnmount() {
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/Other_Will.png"
-                header="Will Megson"
+                <Tile source="/assets/images/Steven_Liu.png"
+                header="Steven Liu"
                 size={150}
-                borderRadius="50%"
-                >
+                borderRadius="50%">
                   {index_lang.section_five.tile_three[this.state.lang]}
                 </Tile>
               </div>
@@ -227,7 +227,7 @@ componentWillUnmount() {
         <section className="section-six">
           <div className="row">
             <div className="col-lg-12 align-self-center">
-              <Donut width={1800} innerRadius={40} innerTop={600}>
+              <Donut width={1800} innerRadius={44} innerTop={520}>
                 <div className="donut-paragraph">
                   <Header textAlign="center">
                     {index_lang.section_six.header[this.state.lang]}
@@ -242,7 +242,7 @@ componentWillUnmount() {
                       </Button>
                     </div>
                     <div className="col-sm-6 pad-center">
-                      <a>{index_lang.section_six.community[this.state.lang]}</a>
+                      <a href="https://join.slack.com/t/getbouncer/shared_invite/enQtNDY2MjAwNjI5NTc0LTQwMWQyOGY2ZjIzNGVhMjM0ZjA3YWQxOGViNDlmYmZlZWU2NzZjOTY3MTFiYzE5ZWRkMTRiM2U1N2NjYjg1ZmE">{index_lang.section_six.community[this.state.lang]}</a>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,6 @@ componentWillUnmount() {
             </div>
           </div>
         </section>
-
         <Footer></Footer>
       </div>
     )

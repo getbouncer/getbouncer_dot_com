@@ -12,7 +12,7 @@ let index_lang = {
             "de": "Bewahren sie Benützern von Betrügern mit der neusten Technologie"
         },
         "paragraph": {
-            "en": "Founded in good intentions, Bouncer aims to solve the problem of rampant fraud in today's technology driven society. Our state-of-the-art solutions protect customers and the companies alike.",
+            "en": "Founded in good intentions, Bouncer aims to solve the problem of rampant fraud in today's technology driven society. Our state-of-the-art solutions protect customers and companies alike.",
             "de": "Mit guten Absichten gegründet, arbeitet Bouncer daran Betrug zu vernichten. Unsere Produkte bringen euch auf dem neuesten Stand der Technik."
         }
     },
@@ -22,8 +22,8 @@ let index_lang = {
             "de": "Sicherheit ohne Kompromisse"
         },
         "ease": {
-            "en": "Card Scan is designed to be simple and straightforward so your users never pause in your payment flow. Card Scan supports every card styles and takes less than one second to scan.",
-            "de": "Wir habe Card Scan als eine einfache und natürliche Software entworfen damit User nicht zu lange warten müssen. Card Scan unterstüzt alle Karten und braucht weniger als eine Sekunde um die Untersuchung zu beenden."
+            "en": "Card Scan is designed to be simple and straightforward so your users never pause in your payment flow. Card Scan supports every card style and takes less than one second to scan.",
+            "de": "Wir haben Card Scan entworfen damit User eine einfache Software benützen können und nicht zu lange warten müssen. Card Scan unterstüzt alle Karten und braucht weniger als eine Sekunde um die Untersuchung zu beenden."
         },
         "conversion": {
             "en": "Adding an option to use Card Scan improves payment conversion by up to 5%. Card Scan is faster than other card scanning technology, including custom built solutions and supports every card design on the market.",
@@ -41,7 +41,7 @@ let index_lang = {
         },
         "paragraph": {
             "en": "The easiest way to add payment into your mobile app. CardScan verifies the card is present and flags stolen cards too. CardVerify is a step up for higher risk transactions. It ensures the card is truly present while cleanly flagging stolen cards.",
-            "de": "Dies macht es einfach Zahlungmöglichkeiten in eurer Applikation zu haben. CardScan findet Karten und meldet Karten die hohes Risiko bieten oder hestohlen wurden. CardVerify stellt sicher, dass mit größeren Verhandlungen, alles gut läuft und meldet gestohlene Karten."
+            "de": "Dies macht es einfach Zahlungmöglichkeiten in eurer Applikation zu haben. CardScan findet Karten und meldet Karten die hohes Risiko bieten oder gestohlen wurden. CardVerify stellt sicher, dass mit größeren Verhandlungen, alles gut läuft und meldet gestohlene Karten."
         },
         "list_item_one": {
             "en": "Sophisticated image analysis detect fake cards",
@@ -59,7 +59,7 @@ let index_lang = {
     "section_four": {
         "soon": {
             "en": "Coming Soon!",
-            "de": "Balf verfügbar!"
+            "de": "Bald verfügbar!"
         },
         "header": {
             "en": "Quickly and securely scan photo IDs with ID Scan by Bouncer",
@@ -67,7 +67,7 @@ let index_lang = {
         },
         "paragraph": {
             "en": "Make sure that customers aren't posing as someone they aren't with ID Scan and ID Verify. With no inconvenience to customers, our solution protects people's identities and prevents fraudulent conduct.",
-            "de": "Stellen Sie mit ID Scan und ID Verify sicher, dass keiner sich als jemand anders darstellt. Ohne jeweilige Unbequemlichkeiten können Sie die Identitäten eurer user sicher halten und Schwindeln vermeiden."
+            "de": "Stellen Sie mit ID Scan und ID Verify sicher, dass keiner sich als jemand anders darstellt. Ohne jeweilige Unbequemlichkeiten können Sie die Identitäten eurer User sicher halten und Schwindeln vermeiden."
         }
     },
     "section_five": {
@@ -77,7 +77,7 @@ let index_lang = {
         },
         "paragraph": {
             "en": "We have deep experience from running security and fraud teams for high growth mobile companies like Lyft and Twitter. We've worked for years on the front lines of stopping sophisticated fraud attacks while optimizing user conversion for some of the fastest growing companies ever.",
-            "de": "Wir haben sehr viel Erfahrung mit Sicherheit gegen Betrug anzugehen. Unser Mitarbeiter haben zuvor für Firmen wie Lyft und Twitter gearbeitet. Wir haben schon viele Jahre lang gegen raffinierte Betrugsmethoden gekämpft."
+            "de": "Wir haben sehr viel Erfahrung mit Sicherheit um gegen Betrug anzugehen. Unsere Mitarbeiter haben zuvor für Firmen wie Lyft und Twitter gearbeitet. Wir haben schon viele Jahre lang gegen raffinierte Betrugsmethoden gekämpft."
         },
         "tile_one": {
             "en": "Co-founder and CEO",
@@ -99,7 +99,7 @@ let index_lang = {
         },
         "paragraph": {
             "en": "Contact us to get started and increase your payment security and conversion.",
-            "de": "Kontaktieren Sie und um eure Zahlungssicherheit und Zahlungsumwandlung zu verbessern."
+            "de": "Kontaktieren Sie uns um eure Zahlungssicherheit und Zahlungsumwandlung zu verbessern."
         },
         "community": {
             "en": "Join Community",

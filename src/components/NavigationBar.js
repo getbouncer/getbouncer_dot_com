@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Button from '../components/Button';
-import NavBar from 'react-bootstrap/NavBar';
 import {Nav} from 'react-bootstrap';
 import styles from '../styles/NavigationBar.module.css';
 import classNames from 'classnames';
