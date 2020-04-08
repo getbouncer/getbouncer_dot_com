@@ -197,7 +197,7 @@ componentWillUnmount() {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile avatar="yes" source="/assets/images/Will_Megson.jpeg"
                 header="Will Megson"
                 size={150}
@@ -205,7 +205,7 @@ componentWillUnmount() {
                   {index_lang.section_five.tile_one[this.state.lang]}
                 </Tile>
               </div>
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile source="/assets/images/Sam_King.jpg"
                 header="Sam King"
                 size={150}
@@ -213,7 +213,7 @@ componentWillUnmount() {
                   {index_lang.section_five.tile_two[this.state.lang]}
                 </Tile>
               </div>
-              <div className="col-md-4 pad-middle pad-tile">
+              <div className="pad-middle pad-tile">
                 <Tile source="/assets/images/Steven_Liu.png"
                 header="Steven Liu"
                 size={150}
