@@ -20,8 +20,8 @@ class Tile extends React.Component {
             src={this.state.source}
             style={{
               borderRadius: this.props.borderRadius,
-              height: 80,
-              paddingBottom: 20}}
+              height: this.props.size,
+              marginBottom: 20}}
               />
             <Header className={styles.headerContainer} size="m">{this.state.header} </Header>
             <Paragraph>{this.props.children} </Paragraph>
