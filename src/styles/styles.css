@@ -181,6 +181,10 @@ section {
    margin-bottom: 50px;
 }
 
+.profile-tile {
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
 .row {
   justify-content: center;
