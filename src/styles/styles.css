@@ -151,6 +151,9 @@ section {
    padding-bottom: 120px;
 }
 
+.section-five {
+  font-size: 12px;
+}
 .section-six {
    display: flex;
    align-items: center;
