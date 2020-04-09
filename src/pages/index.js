@@ -121,7 +121,7 @@ componentWillUnmount() {
                 </Tile>
               </div>
               <div className="col-md-4 pad-middle pad-tile">
-                <Tile source="/assets/images/icon-shield.svg" size={60}
+                <Tile source="/assets/images/icon-intuitive.svg" size={60}
                 header = "Intuitive design">
                   {index_lang.section_two.intuitive[this.state.lang]}
                 </Tile>
