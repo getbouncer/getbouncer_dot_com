@@ -35,6 +35,8 @@ class Index extends React.Component {
     if (window.innerWidth < 992) {
       _this.setState({
         s1_donut_x: 50,
+        s1_phone_top: 550,
+        s1_donut_top: 50,
         s3_donut_x: 50,
         s3_phone_x: 0,
         screen_state: 'Medium'
@@ -42,6 +44,8 @@ class Index extends React.Component {
     } else {
       _this.setState({
         s1_donut_x: 65,
+        s1_phone_top: 480,
+        s1_donut_top: 27,
         s3_donut_x: 20,
         s3_phone_x: 500,
         screen_state: 'Large'
@@ -52,6 +56,8 @@ class Index extends React.Component {
       if (window.innerWidth < 992 && _this.state.screen_state == 'Large') {
         _this.setState({
           s1_donut_x: 50,
+          s1_phone_top: 550,
+          s1_donut_top: 50,
           s3_donut_x: 50,
           s3_phone_x: 0,
           screen_state: 'Medium'
@@ -59,6 +65,8 @@ class Index extends React.Component {
       } else if (window.innerWidth >= 992 && _this.state.screen_state == 'Medium'){
         _this.setState({
           s1_donut_x: 65,
+          s1_phone_top: 480,
+          s1_donut_top: 27,
           s3_donut_x: 20,
           s3_phone_x: 500,
           screen_state: 'Large'
@@ -96,7 +104,7 @@ componentWillUnmount() {
               </Button>
             </div>
             <div className="col-lg-6 align-self-center pad-center">
-              <Donut width={650} innerRadius={35} innerTop={550} x={this.state.s1_donut_x} y={40}>
+              <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top}>
                 <Phone width={300}/>
               </Donut>
             </div>
