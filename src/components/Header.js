@@ -9,7 +9,7 @@ class Header extends React.Component {
     this.fontSizes = {
       's': 16,
       'm': 24,
-      'l': 32
+      'l': 36
     }
   }
 

@@ -104,7 +104,7 @@ componentWillUnmount() {
               </Button>
             </div>
             <div className="col-lg-6 align-self-center pad-center">
-              <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top}>
+              <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top} colorid="first">
                 <Phone width={300}/>
               </Donut>
             </div>
@@ -140,7 +140,7 @@ componentWillUnmount() {
         <section>
           <div className="row">
             <div className="col-lg-6 align-self-center pad-center phone-align pad-tile">
-              <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x}>
+              <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x} gradientOrientation="100%" colorid="second">
                 <Phone x={this.state.s3_phone_x} width={300}/>
               </Donut>
             </div>
@@ -148,6 +148,9 @@ componentWillUnmount() {
               style={{
                 flexDirection: 'column'
               }}>
+              <Paragraph textAlign="left">
+                Card Scan + Card Verify
+              </Paragraph>
               <Header textAlign="left">
                 {index_lang.section_three.header[this.state.lang]}
               </Header>
@@ -235,7 +238,7 @@ componentWillUnmount() {
         <section className="section-six">
           <div className="row">
             <div className="col-lg-12 align-self-center">
-              <Donut width={1800} innerRadius={44} innerTop={520}>
+              <Donut width={1800} innerRadius={44} innerTop={520} gradientOrientation="100%" midColor="#19FFDD" colorid="third">
                 <div className="donut-paragraph">
                   <Header textAlign="center">
                     {index_lang.section_six.header[this.state.lang]}
