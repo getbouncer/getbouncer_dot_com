@@ -9,7 +9,7 @@ class NavigationBar extends React.Component {
   render() {
     return (
 
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light">
          <nav className="mr-auto">
               <a className={styles.Logo} href="/">
                 Bouncer
