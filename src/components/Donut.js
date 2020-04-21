@@ -15,15 +15,15 @@ class Donut extends React.Component {
             textAlign: 'center'
           }}>
           <defs>
-            <linearGradient id="blue-green"
-              x1="0%" y1="100%" x2="100%" y2="0%" gradientTransform={`rotate(${this.props.rotation})`}>
+            <linearGradient id={`${this.props.colorid}`}
+              x1="0%" y1="100%" x2="100%" y2={this.props.gradientOrientation} gradientTransform={`rotate(${this.props.rotation})`}>
               <stop offset="0%" stopColor={this.props.startColor} />
               <stop offset="50%" stopColor={this.props.midColor} />
               <stop offset="100%" stopColor={this.props.endColor} />
             </linearGradient>
           </defs>
           
-          <circle cx={this.props.x} cy={this.props.y} r={this.props.outerRadius} fill="url('#blue-green')" />
+          <circle cx={this.props.x} cy={this.props.y} r={this.props.outerRadius} fill={`url(#${this.props.colorid})`} />
           <circle cx={this.props.x} cy={this.props.y} r={this.props.innerRadius} fill="white" />
         </svg>
         <div className={styles.innerdonut}
@@ -59,6 +59,7 @@ Donut.propTypes = {
 Donut.defaultProps = {
   x: 50,
   y: 50,
+  colorid: "blue-green",
   outerRadius: 50,
   innerRadius: 30,
   innerTop: 0,
@@ -66,7 +67,8 @@ Donut.defaultProps = {
   midColor: '#2FDAFF',
   endColor: '#3120FF',
   rotation: 0,
-  width: 700
+  width: 700,
+  gradientOrientation: '0%'
 };
 
 export default Donut;
