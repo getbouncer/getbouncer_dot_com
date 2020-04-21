@@ -1,3 +1,5 @@
+
+
 .Logo {
   font-weight:600;
   font-size: 1.3em;
@@ -14,8 +16,10 @@
     box-shadow: 0px 40px 18px #f7f7f7;
     display: flex;
     margin-left: 2%;
+    padding-bottom: 40px;
     -webkit-flex-direction: row;
     flex-direction: row;
+
 }
 .rhs {
   display: flex;

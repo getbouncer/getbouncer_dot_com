@@ -217,7 +217,7 @@ componentWillUnmount() {
                 </Tile>
               </div>
               <div className="pad-middle pad-tile profile-tile">
-                <Tile source="/assets/images/Sam_King.jpg"
+                <Tile source="/assets/images/Sam_King.jpeg"
                 header="Sam King"
                 size={220}
                 borderRadius="50%">
