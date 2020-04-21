@@ -33,7 +33,7 @@ class Phone extends React.Component {
               position: 'absolute'
             }}
             src="/assets/images/phone.svg"/>
-        <video autoPlay
+        <video autoPlay muted
           loop
           style={{
             width: this.props.width * 0.8,

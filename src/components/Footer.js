@@ -18,9 +18,9 @@ class Footer extends React.Component {
           <a href="https://www.getbouncer.com/privacy">Terms &amp; Conditions</a>
         </div>
         <div>
-          <FontAwesomeIcon icon={faFacebook} size='2x' className={styles.icon} style></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faFacebook} size='2x' className={styles.icon}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faTwitter} size='2x' className={styles.icon}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faSlack} size='2x' className={styles.icon}></FontAwesomeIcon>
+          <a href="https://join.slack.com/t/getbouncer/shared_invite/enQtNDY2MjAwNjI5NTc0LTQwMWQyOGY2ZjIzNGVhMjM0ZjA3YWQxOGViNDlmYmZlZWU2NzZjOTY3MTFiYzE5ZWRkMTRiM2U1N2NjYjg1ZmE"><FontAwesomeIcon icon={faSlack} size='2x' className={styles.icon}></FontAwesomeIcon></a>
         </div>
       </div>
     )
