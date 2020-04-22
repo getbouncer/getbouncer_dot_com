@@ -22,13 +22,13 @@ class NavigationBar extends React.Component {
 
           <nav className="ml-auto navlink" id="navbarSupportedContent">
             <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="/"> Company</Nav.Link>
-            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="/" > Documentation</Nav.Link>
+            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="documentation" > Documentation</Nav.Link>
             <div className={styles.tog}>
               <Button action={() => window.location.href = "contact"}>
                 Contact Us
               </Button>
             </div>
-            
+
           </nav>
           </div>
 
