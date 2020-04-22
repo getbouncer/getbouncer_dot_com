@@ -195,7 +195,7 @@ render() {
           </div>
         </div>
       </section>
-      <section className="pad-center" style={{
+      <section className="pad-center" id="company" style={{
         paddingTop: 100
       }}>
         <div className="tri-row">
@@ -209,7 +209,7 @@ render() {
               </Paragraph>
             </div>
           </div>
-          <div className="row">
+          <div className="row" >
             <div className="pad-middle pad-tile profile-tile">
               <Tile avatar="yes" source="/assets/images/Will_Megson.jpeg"
               header="Will Megson"
