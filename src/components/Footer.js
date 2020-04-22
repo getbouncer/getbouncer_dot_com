@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from '../styles/Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faSlack } from '@fortawesome/free-brands-svg-icons'
 
 /**
@@ -15,12 +15,11 @@ class Footer extends React.Component {
     return (
       <div className={styles.footer}>
         <div className={styles.links}>
-          <a href="https://www.getbouncer.com/privacy">Terms &amp; Conditions</a>
+          <a href="privacy">Privacy Policy</a>
         </div>
         <div>
-          <FontAwesomeIcon icon={faFacebook} size='2x' className={styles.icon} style></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faTwitter} size='2x' className={styles.icon}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faSlack} size='2x' className={styles.icon}></FontAwesomeIcon>
+          <a href="https://www.linkedin.com/company/getbouncer/"><FontAwesomeIcon icon={faLinkedin} size='2x' className={styles.icon}></FontAwesomeIcon></a>
+          <a href="https://join.slack.com/t/getbouncer/shared_invite/enQtNDY2MjAwNjI5NTc0LTQwMWQyOGY2ZjIzNGVhMjM0ZjA3YWQxOGViNDlmYmZlZWU2NzZjOTY3MTFiYzE5ZWRkMTRiM2U1N2NjYjg1ZmE"><FontAwesomeIcon icon={faSlack} size='2x' className={styles.icon}></FontAwesomeIcon></a>
         </div>
       </div>
     )
