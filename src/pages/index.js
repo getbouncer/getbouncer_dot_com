@@ -99,13 +99,13 @@ render() {
             <Paragraph textAlign="left">
               {index_lang.section_one.paragraph[this.state.lang]}
             </Paragraph>
-            <Button>
+            <Button action={() => window.location.href = "contact"}>
               {index_lang.contact[this.state.lang]}
             </Button>
           </div>
           <div className="col-lg-6 align-self-center pad-center">
             <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top} colorid="first">
-              <Phone width={300}/>
+              <Phone width={300} src="/assets/images/input.gif"/>
             </Donut>
           </div>
         </div>
@@ -141,7 +141,7 @@ render() {
         <div className="row">
           <div className="col-lg-6 align-self-center pad-center phone-align pad-tile">
             <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x} gradientOrientation="100%" colorid="second">
-              <Phone x={this.state.s3_phone_x} width={300}/>
+              <Phone x={this.state.s3_phone_x} width={300} src="/assets/images/verify.gif"/>
             </Donut>
           </div>
           <div className="col-lg-6 align-self-center pad-percent"
@@ -168,7 +168,7 @@ render() {
                 {index_lang.section_three.list_item_three[this.state.lang]}
               </ListItem>
             </List>
-            <Button>
+            <Button action={() => window.location.href = "contact"}>
             {index_lang.contact[this.state.lang]}
             </Button>
           </div>
@@ -195,7 +195,9 @@ render() {
           </div>
         </div>
       </section>
-      <section className="pad-center">
+      <section className="pad-center" style={{
+        paddingTop: 100
+      }}>
         <div className="tri-row">
           <div className="row pad-center">
             <div className="pad-tile tri-row-header">
@@ -248,11 +250,13 @@ render() {
                 </Paragraph>
                 <div className="row">
                   <div className="col-sm-6 pad-center">
-                    <Button>
+                    <Button action={() => window.location.href = "contact"}>
                       {index_lang.contact[this.state.lang]}
                     </Button>
                   </div>
-                  <div className="col-sm-6 pad-center">
+                  <div className="col-sm-6 pad-center" style={{
+                    padding: 20
+                  }}>
                     <a href="https://join.slack.com/t/getbouncer/shared_invite/enQtNDY2MjAwNjI5NTc0LTQwMWQyOGY2ZjIzNGVhMjM0ZjA3YWQxOGViNDlmYmZlZWU2NzZjOTY3MTFiYzE5ZWRkMTRiM2U1N2NjYjg1ZmE">{index_lang.section_six.community[this.state.lang]}</a>
                   </div>
                 </div>

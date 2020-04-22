@@ -33,14 +33,14 @@ class Phone extends React.Component {
               position: 'absolute'
             }}
             src="/assets/images/phone.svg"/>
-        <video autoPlay muted
-          loop
+        <img
           style={{
-            width: this.props.width * 0.8,
-            left: this.props.width * 0.1,
+            width: this.props.width * 0.82,
+            left: this.props.width * 0.09,
             top: this.props.width * 0.17,
             position: 'absolute'
           }}
+          alt="Coming Soon!"
           src={this.props.src}/>
       </div>
     </div>
@@ -59,7 +59,7 @@ Phone.defaultProps = {
   x: 0,
   y: 0,
   width: 300,
-  src: "/assets/videos/demo.mp4"
+  src: "/assets/images/verify.gif"
 };
 
 export default Phone;

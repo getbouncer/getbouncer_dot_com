@@ -15,7 +15,7 @@ class Footer extends React.Component {
     return (
       <div className={styles.footer}>
         <div className={styles.links}>
-          <a href="https://www.getbouncer.com/privacy">Terms &amp; Conditions</a>
+          <a href="privacy">Privacy Policy</a>
         </div>
         <div>
           <a href="https://www.linkedin.com/company/getbouncer/"><FontAwesomeIcon icon={faLinkedin} size='2x' className={styles.icon}></FontAwesomeIcon></a>

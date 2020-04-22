@@ -3,8 +3,7 @@ import getUserLocales from 'get-user-locale';
 let lang = {
   'default': 'en',
   'available': [
-    'en',
-    'de'
+    'en'
   ]
 }
 

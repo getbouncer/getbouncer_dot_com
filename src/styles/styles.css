@@ -187,4 +187,5 @@ section {
    max-width: 100vw;
    width: 500px;
    position: relative;
+   padding: 25px;
 }
