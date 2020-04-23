@@ -23,11 +23,12 @@ class DocumentationTile extends React.Component {
   render() {
     return (
       <div className={styles.docTile}>
-      <a href={this.state.link}>
-        <FontAwesomeIcon icon={this.state.iconType} size='2x' className={styles.icon}></FontAwesomeIcon>
-      <p> {this.state.header} </p>
-
-      <p> {documentation_lang.github[this.state.lang]} </p>
+      <a  className={styles.linkStyle}
+        href={this.state.link}>
+        <FontAwesomeIcon icon={this.state.iconType} size='4x' className={styles.icon}></FontAwesomeIcon>
+      <p className={styles.integrationTitle}> {this.state.header} </p>
+      <hr></hr>
+      <p className={styles.viewGuide}> {documentation_lang.github[this.state.lang]} </p>
       </a>
       </div>
     )

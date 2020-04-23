@@ -30,13 +30,13 @@ class Documentation extends React.Component {
         </section>
 
         <section className={styles.guides}>
-          <DocumentationTile iconType={faApple}
+          <DocumentationTile className={styles.icon}  iconType={faApple}
             link="https://github.com/getbouncer/cardscan-ios" header={documentation_lang.apple[this.state.lang]}>
 
             </DocumentationTile>
 
 
-            <DocumentationTile iconType={faAndroid}
+            <DocumentationTile className={styles.icon} iconType={faAndroid}
             link="https://github.com/getbouncer/cardscan-android" header={documentation_lang.android[this.state.lang]}>
 
             </DocumentationTile>

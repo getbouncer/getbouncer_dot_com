@@ -1,6 +1,4 @@
-.icon {
-  padding-left: 10px;
-}
+
 
 .title {
   margin-top: 10%;
@@ -12,11 +10,32 @@
   justify-content: center;
 }
 .docTile {
-  display: inline;
+
+  text-align: center;
   border-size: 2px;
-  padding: 20px;
+  padding: 30px;
   margin-right: 10px;
   margin-left: 10px;
   border-style: outset inset inset outset;
   border-radius: 5px;
+
+}
+.docTile:hover {
+  border-color: #3333FF !important;
+}
+.docTile:hover .linkStyle {
+  color: #3333FF !important;
+  text-decoration: none;
+}
+
+.docTile:hover .icon {
+  color: black;
+}
+
+.integrationTitle {
+  font-weight:bold;
+}
+
+.viewGuide {
+  text-align: center;
 }
