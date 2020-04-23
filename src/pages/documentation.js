@@ -5,6 +5,8 @@ import styles from '../styles/Documentation.module.css';
 import NavigationBar from '../components/NavigationBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple } from '@fortawesome/free-brands-svg-icons'
+import { faAndroid } from '@fortawesome/free-brands-svg-icons'
+
 import Header from '../components/Header';
 import DocumentationTile from '../components/DocumentationTile';
 
@@ -29,13 +31,13 @@ class Documentation extends React.Component {
         </section>
 
         <section className={styles.guides}>
-          <DocumentationTile
+          <DocumentationTile iconType={faApple}
             link="https://github.com/getbouncer/cardscan-ios" header={documentation_lang.apple[this.state.lang]}>
 
             </DocumentationTile>
 
 
-            <DocumentationTile
+            <DocumentationTile iconType={faAndroid}
             link="https://github.com/getbouncer/cardscan-android" header={documentation_lang.android[this.state.lang]}>
 
             </DocumentationTile>

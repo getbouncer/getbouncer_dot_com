@@ -16,6 +16,7 @@ class DocumentationTile extends React.Component {
     'lang': lang,
     link: this.props.link,
     header: this.props.header,
+    iconType: this.props.iconType,
     }
 
   }
@@ -24,7 +25,7 @@ class DocumentationTile extends React.Component {
     return (
       <div className={styles.docTile}>
       <a href={this.state.link}>
-        <FontAwesomeIcon icon={faAndroid} size='2x' className={styles.icon}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={this.state.iconType} size='2x' className={styles.icon}></FontAwesomeIcon>
       <p> {this.state.header} </p>
 
       <p> {documentation_lang.github[this.state.lang]} </p>
