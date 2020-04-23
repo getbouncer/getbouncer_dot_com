@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../styles/Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faSlack } from '@fortawesome/free-brands-svg-icons'
 
