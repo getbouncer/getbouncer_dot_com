@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import ListItem from '../components/ListItem';
 import List from '../components/List';
 import Tile from '../components/Tile';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -217,6 +219,7 @@ render() {
               borderRadius="50%">
                 {index_lang.section_five.tile_one[this.state.lang]}
               </Tile>
+              <a href="https://www.linkedin.com/in/will-megson-60619645/"><FontAwesomeIcon icon={faLinkedin} size='2x' ></FontAwesomeIcon></a>
             </div>
             <div className="pad-middle pad-tile profile-tile">
               <Tile source="/assets/images/Sam_King.jpeg"
@@ -225,6 +228,7 @@ render() {
               borderRadius="50%">
                 {index_lang.section_five.tile_two[this.state.lang]}
               </Tile>
+                <a href="https://www.linkedin.com/in/sam-king-093613/"><FontAwesomeIcon icon={faLinkedin} size='2x' ></FontAwesomeIcon></a>
             </div>
             <div className="pad-middle pad-tile profile-tile">
               <Tile source="/assets/images/Steven_Liu.png"
@@ -233,6 +237,7 @@ render() {
               borderRadius="50%">
                 {index_lang.section_five.tile_three[this.state.lang]}
               </Tile>
+              <a href="https://www.linkedin.com/in/steven-liu-00127b24/"><FontAwesomeIcon icon={faLinkedin} size='2x' ></FontAwesomeIcon></a>
             </div>
           </div>
         </div>
