@@ -20,9 +20,10 @@ class DocumentationTile extends React.Component {
   render() {
     return (
       <div>
-      <p> {this.state.header} </p>
       <a href={this.state.link}>
-      {documentation_lang.github[this.state.lang]}
+      <p> {this.state.header} </p>
+
+      <p> {documentation_lang.github[this.state.lang]} </p>
       </a>
       </div>
     )

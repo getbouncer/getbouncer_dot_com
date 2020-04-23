@@ -28,17 +28,17 @@ class Documentation extends React.Component {
         <Header textAlign="center" size="l"> Bouncer Documentation </Header>
         </section>
 
-        <section>
-        <DocumentationTile
-        link="https://github.com/getbouncer/cardscan-ios" header={documentation_lang.apple[this.state.lang]}>
-          <FontAwesomeIcon icon={faApple} size='2x' className={styles.icon}></FontAwesomeIcon>
-        </DocumentationTile>
+        <section className={styles.guides}>
+          <DocumentationTile
+            link="https://github.com/getbouncer/cardscan-ios" header={documentation_lang.apple[this.state.lang]}>
+              <FontAwesomeIcon icon={faApple} size='2x' className={styles.icon}></FontAwesomeIcon>
+            </DocumentationTile>
 
 
-        <DocumentationTile
-        link="https://github.com/getbouncer/cardscan-android" header={documentation_lang.android[this.state.lang]}>
-          <FontAwesomeIcon icon={faApple} size='2x' className={styles.icon}></FontAwesomeIcon>
-        </DocumentationTile>
+            <DocumentationTile
+            link="https://github.com/getbouncer/cardscan-android" header={documentation_lang.android[this.state.lang]}>
+            <FontAwesomeIcon icon={faApple} size='2x' className={styles.icon}></FontAwesomeIcon>
+            </DocumentationTile>
         </section>
 
       </div>
