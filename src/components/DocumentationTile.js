@@ -3,7 +3,6 @@ import determineDefaultLang from '../languages/default_lang';
 import documentation_lang from '../languages/documentation_lang';
 import styles from '../styles/Documentation.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAndroid } from '@fortawesome/free-brands-svg-icons'
 
 
 class DocumentationTile extends React.Component {

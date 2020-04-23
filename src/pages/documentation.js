@@ -6,7 +6,6 @@ import NavigationBar from '../components/NavigationBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faApple } from '@fortawesome/free-brands-svg-icons'
 import { faAndroid } from '@fortawesome/free-brands-svg-icons'
-
 import Header from '../components/Header';
 import DocumentationTile from '../components/DocumentationTile';
 
@@ -27,7 +26,7 @@ class Documentation extends React.Component {
         <NavigationBar></NavigationBar>
 
         <section className={styles.title}>
-        <Header textAlign="center" size="l"> Bouncer Documentation </Header>
+        <Header textAlign="center" size="l"> {documentation_lang.title[this.state.lang]}</Header>
         </section>
 
         <section className={styles.guides}>
