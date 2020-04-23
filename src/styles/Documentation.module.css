@@ -1,0 +1,22 @@
+.icon {
+  padding-left: 10px;
+}
+
+.title {
+  margin-top: 10%;
+}
+
+.guides {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.docTile {
+  display: inline;
+  border-size: 2px;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-style: outset inset inset outset;
+  border-radius: 5px;
+}
