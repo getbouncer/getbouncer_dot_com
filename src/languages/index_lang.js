@@ -10,7 +10,7 @@ let index_lang = {
             "en": "A user first approach to mobile payments and fraud prevention",
         },
         "paragraph": {
-            "en": "Founded in good intentions, Bouncer aims to solve the problem of rampant fraud in today's technology driven society. Our state-of-the-art solutions protect customers and companies alike.",
+            "en": "Bouncer is an SDK for scanning and verifying credit cards and photo IDs in mobile apps. We layer in sophisticated real-time checks during the scan to provide high confidence authentications instantly with no user confusion.",
         }
     },
     "section_two": {

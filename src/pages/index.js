@@ -21,7 +21,8 @@ class Index extends React.Component {
     let lang = determineDefaultLang();
 
     this.state = {
-      'lang': lang
+      'lang': lang,
+      show_phone: 0
     }
   }
 
@@ -39,7 +40,8 @@ class Index extends React.Component {
         s1_donut_top: 50,
         s3_donut_x: 50,
         s3_phone_x: 0,
-        screen_state: 'Medium'
+        screen_state: 'Medium',
+        show_phone: 1
       });
     } else {
       _this.setState({
@@ -48,7 +50,8 @@ class Index extends React.Component {
         s1_donut_top: 27,
         s3_donut_x: 20,
         s3_phone_x: 500,
-        screen_state: 'Large'
+        screen_state: 'Large',
+        show_phone: 1
       });
     }
 
@@ -60,7 +63,8 @@ class Index extends React.Component {
           s1_donut_top: 50,
           s3_donut_x: 50,
           s3_phone_x: 0,
-          screen_state: 'Medium'
+          screen_state: 'Medium',
+          show_phone: 1
         });
       } else if (window.innerWidth >= 992 && _this.state.screen_state == 'Medium'){
         _this.setState({
@@ -69,7 +73,8 @@ class Index extends React.Component {
           s1_donut_top: 27,
           s3_donut_x: 20,
           s3_phone_x: 500,
-          screen_state: 'Large'
+          screen_state: 'Large',
+          show_phone: 1
         });
       }
     }
@@ -104,7 +109,7 @@ render() {
             </Button>
           </div>
           <div className="col-lg-6 align-self-center pad-center">
-            <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top} colorid="first">
+            <Donut width={650} innerRadius={35} innerTop={this.state.s1_phone_top} x={this.state.s1_donut_x} y={this.state.s1_donut_top} scale={this.state.show_phone} colorid="first">
               <Phone width={300} src="/assets/images/input.gif"/>
             </Donut>
           </div>
@@ -140,7 +145,7 @@ render() {
       <section>
         <div className="row">
           <div className="col-lg-6 align-self-center pad-center phone-align pad-tile">
-            <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x} gradientOrientation="100%" colorid="second">
+            <Donut width={650} innerRadius={35} innerTop={400} x={this.state.s3_donut_x} scale={this.state.show_phone} gradientOrientation="100%" colorid="second">
               <Phone x={this.state.s3_phone_x} width={300} src="/assets/images/verify.gif"/>
             </Donut>
           </div>

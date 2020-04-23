@@ -34,7 +34,9 @@ class Donut extends React.Component {
             top: ((this.props.width * (50 - this.props.innerRadius) / 100) - this.props.width + (((this.props.y - 50)/ 100) * this.props.width)) * 0.55 + this.props.innerTop,
             width: (this.props.innerRadius * 2 / 100) * this.props.width,
             height: (this.props.innerRadius * 2 / 100) * this.props.width,
-            position: 'absolute'
+            position: 'absolute',
+            transition: 'transform 0.25s',
+            transform: `scale(${this.props.scale})`
           }}>
           {this.props.children}
         </div>
@@ -54,6 +56,7 @@ Donut.propTypes = {
   endColor: PropTypes.string,
   rotation: PropTypes.number,
   width: PropTypes.number,
+  scale: PropTypes.number,
 }
 
 Donut.defaultProps = {
@@ -68,7 +71,8 @@ Donut.defaultProps = {
   endColor: '#3120FF',
   rotation: 0,
   width: 700,
-  gradientOrientation: '0%'
+  gradientOrientation: '0%',
+  scale: 1
 };
 
 export default Donut;

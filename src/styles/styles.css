@@ -81,6 +81,11 @@ a {
    color: #212529 !important;
 }
 
+button {
+   border: 0px solid transparent;
+   border-radius: 50px;
+}
+
 /* Default styles */
 .navbar-collapse.in {
     display: block !important;

@@ -21,7 +21,7 @@ class NavigationBar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarToggler">
 
           <nav className="ml-auto navlink" id="navbarSupportedContent">
-            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="#company"> Company</Nav.Link>
+            <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="/#company"> Company</Nav.Link>
             <Nav.Link className={classNames({[styles.tog]: true, ['align-self-center']: true})} href="documentation" > Documentation</Nav.Link>
             <div className={styles.tog}>
               <Button action={() => window.location.href = "contact"}>
