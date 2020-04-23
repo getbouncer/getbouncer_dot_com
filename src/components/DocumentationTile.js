@@ -1,7 +1,7 @@
 import React from 'react';
 import determineDefaultLang from '../languages/default_lang';
 import documentation_lang from '../languages/documentation_lang';
-
+import styles from '../styles/Documentation.module.css';
 
 class DocumentationTile extends React.Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class DocumentationTile extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={styles.docTile}>
       <a href={this.state.link}>
       <p> {this.state.header} </p>
 

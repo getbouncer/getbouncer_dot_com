@@ -31,7 +31,7 @@ class Documentation extends React.Component {
         <section className={styles.guides}>
           <DocumentationTile
             link="https://github.com/getbouncer/cardscan-ios" header={documentation_lang.apple[this.state.lang]}>
-              <FontAwesomeIcon icon={faApple} size='2x' className={styles.icon}></FontAwesomeIcon>
+
             </DocumentationTile>
 
 
