@@ -37,7 +37,7 @@ class Documentation extends React.Component {
 
 
             <DocumentationTile className={styles.icon} iconType={faAndroid}
-            link="https://github.com/getbouncer/cardscan-android" header={documentation_lang.android[this.state.lang]}>
+            link="https://github.com/getbouncer/cardscan-demo-android" header={documentation_lang.android[this.state.lang]}>
 
             </DocumentationTile>
         </section>
