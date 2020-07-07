@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '~components/Layout'
+import SEO from '~components/SEO'
 import GetStarted from '~components/GetStarted'
 import PricingPlans from '~components/PricingPlans'
 import PlansComparison from '~components/PlansComparison'
@@ -15,6 +16,10 @@ const PricingPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        title="Bouncer | Pricing"
+        desc="Discover our tiers and pick one that best fits your needs. Contact us if you need a tailored plan!"
+      />
       <PricingPlans data={pricing.data} />
       <AboveSmartphone>
         <PlansComparison data={pricing.data} />

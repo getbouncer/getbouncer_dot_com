@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '~components/Layout'
+import SEO from '~components/SEO'
 import ProductHero from '~components/ProductHero'
 import DataSecurity from '~components/DataSecurity'
 import ProductSlices from '~components/ProductSlices'
@@ -13,6 +14,7 @@ const ProductPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO title={`Bouncer | ${product.data.product_name.text}`} desc={product.data.product_headline.text} />
       <ProductHero data={product.data} />
       <ProductSlices allSlices={product.data.body} />
       {pageContext.uid === 'scan' && (
@@ -35,6 +37,9 @@ export const query = graphql`
   query ProductQuery($uid: String!) {
     product: prismicProduct(uid: { eq: $uid }) {
       data {
+        product_name {
+          text
+        }
         product_logo {
           alt
           url
@@ -45,6 +50,7 @@ export const query = graphql`
         }
         product_headline {
           html
+          text
         }
         product_cta
         show_get_started

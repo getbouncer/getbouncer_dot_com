@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import Layout from '~components/Layout'
+import SEO from '~components/SEO'
 import HomeHero from '~components/HomeHero'
 import HomeSlices from '~components/HomeSlices'
 import GetStarted from '~components/GetStarted'
@@ -20,6 +21,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Bouncer | Homepage" />
       <BackgroundContainer>
         <HomeHero data={homepage.data} />
         <HomeSlices allSlices={homepage.data.body} />

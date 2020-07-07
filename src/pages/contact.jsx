@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
+import SEO from '~components/SEO'
 import Layout from '~components/Layout'
 
 const Iframe = styled.iframe`
@@ -15,6 +16,10 @@ const ContactPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO
+        title="Bouncer | Contact us"
+        desc="Contact us for any questions you might have and to allow us to advise you as best as possible."
+      />
       <Iframe title="Contact Form" src={contact.data.typeform_iframe.url} />
     </Layout>
   )
