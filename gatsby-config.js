@@ -5,8 +5,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://getbouncer.com',
     title: 'Bouncer',
-    description: 'Website Description here',
+    description: 'Bouncer is an SDK for scanning and verifying credit cards and photo IDs in mobile apps.',
     author: '@bouncer',
   },
   pathPrefix: '/',
@@ -62,7 +63,7 @@ module.exports = {
         },
       },
     },
-    //'gatsby-plugin-sitemap',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
