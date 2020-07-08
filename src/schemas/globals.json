@@ -1,0 +1,139 @@
+{
+  "Header": {
+    "display_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Name"
+      }
+    },
+    "logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Logo"
+      }
+    },
+    "products_menu": {
+      "type": "Text",
+      "config": {
+        "label": "Products Menu"
+      }
+    },
+    "pricing_menu": {
+      "type": "Text",
+      "config": {
+        "label": "Pricing Menu"
+      }
+    },
+    "resources_menu": {
+      "type": "Text",
+      "config": {
+        "label": "Resources Menu"
+      }
+    },
+    "documentation_link": {
+      "type": "Link",
+      "config": {
+        "allowTargetBlank": true,
+        "label": "Documentation link"
+      }
+    },
+    "cta_button": {
+      "type": "Text",
+      "config": {
+        "label": "CTA Button"
+      }
+    }
+  },
+  "Footer": {
+    "minimal_logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Minimal Logo"
+      }
+    },
+    "socials": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "social_logo": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Social Logo"
+            }
+          },
+          "social_link": {
+            "type": "Link",
+            "config": {
+              "allowTargetBlank": true,
+              "label": "Social Link"
+            }
+          }
+        },
+        "label": "Socials"
+      }
+    }
+  },
+  "Companies": {
+    "companies_logo": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "company_logo": {
+            "type": "Image",
+            "config": {
+              "constraint": {},
+              "thumbnails": [],
+              "label": "Company Logo"
+            }
+          }
+        },
+        "label": "Companies Logo"
+      }
+    }
+  },
+  "Get started now": {
+    "icon": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Icon"
+      }
+    },
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Title"
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "strong",
+        "label": "Text"
+      }
+    },
+    "cta_text": {
+      "type": "Text",
+      "config": {
+        "label": "CTA Text"
+      }
+    },
+    "background": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Background"
+      }
+    }
+  }
+}

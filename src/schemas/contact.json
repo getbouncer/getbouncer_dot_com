@@ -1,0 +1,10 @@
+{
+  "Main": {
+    "typeform_iframe": {
+      "type": "Link",
+      "config": {
+        "label": "Typeform iframe"
+      }
+    }
+  }
+}

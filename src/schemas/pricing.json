@@ -1,0 +1,83 @@
+{
+  "Main": {
+    "headline": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Headline"
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, strong, em, hyperlink",
+        "label": "Get in touch text"
+      }
+    },
+    "comparison_headline": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Comparison Headline"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "tier": []
+        },
+        "choices": {
+          "tier": {
+            "type": "Slice",
+            "fieldset": "Tier",
+            "description": "Define a tier pricing option",
+            "icon": "attach_money",
+            "display": "list",
+            "non-repeat": {
+              "tier_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier name"
+                }
+              },
+              "tier_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier description"
+                }
+              },
+              "tier_short_description": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier short description"
+                }
+              },
+              "tier_price": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier price"
+                }
+              },
+              "tier_cta": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier CTA"
+                }
+              }
+            },
+            "repeat": {
+              "tier_feature": {
+                "type": "Text",
+                "config": {
+                  "label": "Tier feature"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
