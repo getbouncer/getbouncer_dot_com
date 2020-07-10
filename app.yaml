@@ -1,7 +1,15 @@
-runtime: nodejs10
-
-# what follows will be optional in the future:
+runtime: python37
 service: default
+
 handlers:
-- url: /.*
-  script: auto
+  - url: /
+    static_files: public/index.html
+    upload: public/index.html
+
+  - url: /((.*\/)*[^\/]+\.[^\/]+)$
+    static_files: public/\1
+    upload: public/.*
+
+  - url: /(.*)$
+    static_files: public/\1/index.html
+    upload: public/.*/index.html

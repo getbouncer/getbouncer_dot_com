@@ -56,6 +56,7 @@ typings/
 
 # gatsby files
 .cache/
+.public/
 public
 
 # Mac files
@@ -70,3 +71,6 @@ yarn-error.log
 
 # Env file
 .env
+
+# VS Code files
+.vscode/
