@@ -2,26 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
+import BackgroundImage from 'gatsby-background-image'
 import SEO from '~components/SEO'
 import HomeHero from '~components/HomeHero'
 import HomeSlices from '~components/HomeSlices'
 import GetStarted from '~components/GetStarted'
-import backgroundGradients from '~images/home-background.png'
+//import backgroundGradients from '~images/home-background.png'
 
-const BackgroundContainer = styled.div`
-  background-image: url(${backgroundGradients});
+const BackgroundContainer = styled(BackgroundImage)`
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 100px;
 `
 
 const IndexPage = ({ data }) => {
-  const { homepage } = data
+  const { backgroundImage, homepage } = data
 
   return (
     <>
       <SEO title="Bouncer | Homepage" />
-      <BackgroundContainer>
+      <BackgroundContainer Tag="div" fluid={backgroundImage.childImageSharp.fluid}>
         <HomeHero data={homepage.data} />
         <HomeSlices allSlices={homepage.data.body} />
       </BackgroundContainer>
@@ -36,6 +36,13 @@ IndexPage.propTypes = {
 
 export const query = graphql`
   query HomepageQuery {
+    backgroundImage: file(relativePath: { eq: "home-background.png" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
     homepage: prismicHomepage {
       data {
         hero_cta
