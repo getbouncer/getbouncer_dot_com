@@ -7,7 +7,6 @@ import SEO from '~components/SEO'
 import HomeHero from '~components/HomeHero'
 import HomeSlices from '~components/HomeSlices'
 import GetStarted from '~components/GetStarted'
-//import backgroundGradients from '~images/home-background.png'
 
 const BackgroundContainer = styled(BackgroundImage)`
   background-repeat: no-repeat;
