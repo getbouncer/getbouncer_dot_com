@@ -33,6 +33,7 @@ module.exports = {
           product: require('./src/schemas/product.json'),
           contact: require('./src/schemas/contact.json'),
           pricing: require('./src/schemas/pricing.json'),
+          privacy_policy: require('./src/schemas/privacy_policy.json'),
         },
       },
     },
