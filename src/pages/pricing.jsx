@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '~components/Layout'
 import SEO from '~components/SEO'
 import GetStarted from '~components/GetStarted'
 import PricingPlans from '~components/PricingPlans'
@@ -15,7 +14,7 @@ const PricingPage = ({ data }) => {
   const { pricing } = data
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Bouncer | Pricing"
         desc="Discover our tiers and pick one that best fits your needs. Contact us if you need a tailored plan!"
@@ -30,7 +29,7 @@ const PricingPage = ({ data }) => {
       </Container>
       <Spacer height={50} />
       <GetStarted />
-    </Layout>
+    </>
   )
 }
 

@@ -48,7 +48,7 @@ const GetStarted = () => {
       <Icon src={icon.url} alt={icon.alt} />
       <Headline>{title.text}</Headline>
       <Text dangerouslySetInnerHTML={{ __html: text.html }} />
-      <CtaButton text={ctaText} to="/contact" inverted />
+      <CtaButton isInternal text={ctaText} to="/contact" inverted />
     </section>
   )
 }

@@ -1,4 +1,6 @@
 /* eslint-disable global-require, camelcase, import/no-extraneous-dependencies */
+const path = require('path')
+
 require('dotenv').config({
   path: '.env',
 })
@@ -14,6 +16,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, 'src', 'images'),
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -33,7 +42,14 @@ module.exports = {
           product: require('./src/schemas/product.json'),
           contact: require('./src/schemas/contact.json'),
           pricing: require('./src/schemas/pricing.json'),
+          privacy_policy: require('./src/schemas/privacy_policy.json'),
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/globals/Layout/index.js'),
       },
     },
     {
