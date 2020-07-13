@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import Container from '~globals/Container'
 import CtaButton from '~components/CtaButton'
@@ -22,7 +23,7 @@ import {
 } from './styles'
 import arrowDown from '~images/arrow-down.svg'
 
-const Header = () => {
+const Header = ({ location }) => {
   const [activeBurger, setActiveBurger] = useState(false)
   const [showProductsMobile, setShowProductsMobile] = useState(false)
 
@@ -74,6 +75,10 @@ const Header = () => {
   } = data.prismicGlobals.data
 
   const products = data.products.edges
+
+  useEffect(() => {
+    setActiveBurger(false)
+  }, [location])
 
   return (
     <header>
@@ -162,6 +167,10 @@ const Header = () => {
       </Smartphone>
     </header>
   )
+}
+
+Header.propTypes = {
+  location: PropTypes.shape().isRequired,
 }
 
 export default Header

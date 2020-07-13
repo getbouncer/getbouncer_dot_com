@@ -32,7 +32,7 @@ const Layout = ({ children, location }) => (
   <ThemeProvider theme={theme}>
     <>
       <Global styles={globalStyle} />
-      <Header />
+      <Header location={location} />
       <Transition location={location}>
         <main>{children}</main>
       </Transition>
