@@ -38,6 +38,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/globals/Layout/index.js'),
+      },
+    },
+    {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
         alias: {

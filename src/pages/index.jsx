@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import Layout from '~components/Layout'
 import SEO from '~components/SEO'
 import HomeHero from '~components/HomeHero'
 import HomeSlices from '~components/HomeSlices'
@@ -20,14 +19,14 @@ const IndexPage = ({ data }) => {
   const { homepage } = data
 
   return (
-    <Layout>
+    <>
       <SEO title="Bouncer | Homepage" />
       <BackgroundContainer>
         <HomeHero data={homepage.data} />
         <HomeSlices allSlices={homepage.data.body} />
       </BackgroundContainer>
       <GetStarted />
-    </Layout>
+    </>
   )
 }
 

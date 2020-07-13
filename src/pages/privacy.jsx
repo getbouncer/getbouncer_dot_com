@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import Layout from '~components/Layout'
 import SEO from '~components/SEO'
 import Container from '~globals/Container'
 
@@ -37,12 +36,12 @@ const TextContainer = styled.div`
 `
 
 const PrivacyPage = ({ data }) => (
-  <Layout>
+  <>
     <SEO title="Bouncer | Privacy Policy" />
     <Container>
       <TextContainer dangerouslySetInnerHTML={{ __html: data.privacy.data.text.html }} />
     </Container>
-  </Layout>
+  </>
 )
 
 PrivacyPage.propTypes = {

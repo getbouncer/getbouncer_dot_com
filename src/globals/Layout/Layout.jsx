@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Global, css } from '@emotion/core'
 import { ThemeProvider } from 'emotion-theming'
 import { theme, reset, root } from '~styles'
+import Transition from '~globals/Transition'
 import Header from '~components/Header'
 import Footer from '~components/Footer'
 
@@ -27,12 +28,14 @@ const globalStyle = css`
   }
 `
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <ThemeProvider theme={theme}>
     <>
       <Global styles={globalStyle} />
       <Header />
-      <main>{children}</main>
+      <Transition location={location}>
+        <main>{children}</main>
+      </Transition>
       <Footer />
     </>
   </ThemeProvider>
@@ -40,6 +43,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.shape().isRequired,
 }
 
 export default Layout

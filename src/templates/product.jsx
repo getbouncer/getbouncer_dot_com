@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '~components/Layout'
 import SEO from '~components/SEO'
 import ProductHero from '~components/ProductHero'
 import DataSecurity from '~components/DataSecurity'
@@ -13,7 +12,7 @@ const ProductPage = ({ data, pageContext }) => {
   const { product } = data
 
   return (
-    <Layout>
+    <>
       <SEO title={`Bouncer | ${product.data.product_name.text}`} desc={product.data.product_headline.text} />
       <ProductHero data={product.data} />
       <ProductSlices allSlices={product.data.body} />
@@ -24,7 +23,7 @@ const ProductPage = ({ data, pageContext }) => {
         </>
       )}
       {product.data.show_get_started && <GetStarted />}
-    </Layout>
+    </>
   )
 }
 
