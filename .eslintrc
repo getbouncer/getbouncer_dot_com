@@ -34,6 +34,7 @@
       }
     ],
     "operator-linebreak": ["error", "after"],
+    "linebreak-style": ["error", "windows"],
     "semi": ["error", "never"],
     "no-new": [0],
     "max-len": [
