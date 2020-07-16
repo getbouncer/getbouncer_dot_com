@@ -1,0 +1,302 @@
+{
+  "Main": {
+    "product_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Product Name"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "URL",
+        "placeholder": "The url the product will have, eg 'scan' to get /scan"
+      }
+    },
+    "product_logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Product Logo"
+      }
+    },
+    "product_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Product Image"
+      }
+    },
+    "product_headline": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1, strong",
+        "label": "Product Headline"
+      }
+    },
+    "product_cta": {
+      "type": "Text",
+      "config": {
+        "label": "Product CTA"
+      }
+    },
+    "show_get_started": {
+      "type": "Boolean",
+      "config": {
+        "placeholder_false": "Hide Section",
+        "placeholder_true": "Show Section",
+        "default_value": false,
+        "label": "Show Get Started"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "headline___list___illustration": [],
+          "illustration___content": [],
+          "reviews_slider": [],
+          "three_steps_slider": []
+        },
+        "choices": {
+          "headline___3_items": {
+            "type": "Slice",
+            "fieldset": "Headline + 3 items",
+            "description": "Section to have a gradient headline with a list of 3 items (image+text) below.",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Headline"
+                }
+              }
+            },
+            "repeat": {
+              "item_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Item Image"
+                }
+              },
+              "item_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Item Title"
+                }
+              },
+              "item_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em, list-item",
+                  "allowTargetBlank": true,
+                  "label": "Item Description"
+                }
+              }
+            }
+          },
+          "headline___list___illustration": {
+            "type": "Slice",
+            "fieldset": "Headline + List + Illustration",
+            "description": "Section with a gradient headline, a list of items on the left with an illustration on the right",
+            "icon": "burst_mode",
+            "display": "list",
+            "non-repeat": {
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Headline"
+                }
+              },
+              "illustration": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Illustration"
+                }
+              }
+            },
+            "repeat": {
+              "item_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Item Icon"
+                }
+              },
+              "item_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Item Title"
+                }
+              },
+              "item_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "allowTargetBlank": true,
+                  "label": "Item Description"
+                }
+              }
+            }
+          },
+          "illustration___content": {
+            "type": "Slice",
+            "fieldset": "Illustration + Content",
+            "description": "Section with an illustration on the right, and content on the left (headline, text, cta...)",
+            "icon": "art_track",
+            "display": "list",
+            "non-repeat": {
+              "illustration": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Illustration"
+                }
+              },
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "Headline"
+                }
+              },
+              "body_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "allowTargetBlank": true,
+                  "label": "Body Text"
+                }
+              },
+              "cta_text": {
+                "type": "Text",
+                "config": {
+                  "label": "CTA Text"
+                }
+              },
+              "cta_link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "CTA Link"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "reviews_slider": {
+            "type": "Slice",
+            "fieldset": "Reviews Slider",
+            "description": "Section with reviews in slider form",
+            "icon": "slideshow",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "company_logo": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Company Logo"
+                }
+              },
+              "review_text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "Review Text"
+                }
+              },
+              "review_author": {
+                "type": "Text",
+                "config": {
+                  "label": "Review Author"
+                }
+              }
+            }
+          },
+          "three_steps_slider": {
+            "type": "Slice",
+            "fieldset": "Three Steps Slider",
+            "description": "Slider for how it works",
+            "icon": "slideshow",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "step_illustration": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "Step Illustration"
+                }
+              },
+              "step_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Step Title"
+                }
+              },
+              "step_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong, em",
+                  "label": "Step Description"
+                }
+              },
+              "illustration_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Illustration Title"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Homepage Content": {
+    "product_headline_home": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading3",
+        "label": "Product Headline"
+      }
+    },
+    "product_description_home": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "strong, em",
+        "label": "Product Description"
+      }
+    },
+    "product_cta_home": {
+      "type": "Text",
+      "config": {
+        "label": "Product CTA"
+      }
+    },
+    "product_image_home": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Product Image"
+      }
+    }
+  }
+}

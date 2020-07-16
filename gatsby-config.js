@@ -40,6 +40,7 @@ module.exports = {
           globals: require('./src/schemas/globals.json'),
           homepage: require('./src/schemas/homepage.json'),
           product: require('./src/schemas/product.json'),
+          uproduct: require('./src/schemas/uproduct.json'),
           contact: require('./src/schemas/contact.json'),
           pricing: require('./src/schemas/pricing.json'),
           privacy_policy: require('./src/schemas/privacy_policy.json'),
