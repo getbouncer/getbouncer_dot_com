@@ -9,6 +9,7 @@ import {
   InnerContainer,
   SliderContainer,
   Slide,
+  Icon,
   Text,
   Author,
   DotPrev,
@@ -67,7 +68,9 @@ const ReviewsSlider = ({ input }) => {
               {items.map((item, index) => (
                 // eslint-disable-next-line react/no-array-index-key
                 <Slide key={index}>
-                  <img src={item.company_logo.url} alt={item.company_logo.alt} />
+                  <Icon>
+                    <img src={item.company_logo.url} alt={item.company_logo.alt} />
+                  </Icon>
                   <Text>{item.review_text.text}</Text>
                   <Author>{item.review_author}</Author>
                 </Slide>

@@ -37,6 +37,15 @@ export const Slide = styled.li`
   }
 `
 
+export const Icon = styled.li`
+  cursor: pointer;
+
+  img {
+    height: 45px;
+  }
+
+`
+
 export const Text = styled.p`
   font-size: 1.75rem;
   line-height: 2.6rem;

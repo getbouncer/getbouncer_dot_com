@@ -94,5 +94,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify',
+    'gatsby-plugin-remove-trailing-slashes'
   ],
 }
