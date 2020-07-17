@@ -30,7 +30,8 @@ export const Headline = styled.div`
 
 export const Description = styled.div`
   margin: 24px auto;
-  max-width: 32vw;
+  width: 32vw;
+  max-width: 550px;
 
   @media ${breakpoints.smartphone} {
     width: 100%;
