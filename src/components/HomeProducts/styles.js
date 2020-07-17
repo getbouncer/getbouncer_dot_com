@@ -40,10 +40,17 @@ export const Item = styled.li`
   }
 
   &:nth-of-type(odd) {
+    @media ${breakpoints.smartphone} {
+      justify-content: center;
+      overflow: hidden;
+    }
+
+
     > img {
       margin-right: 15%;
 
       @media ${breakpoints.smartphone} {
+        margin-right: 0px;
         order: 2;
       }
     }
@@ -53,6 +60,7 @@ export const Item = styled.li`
     justify-content: flex-end;
 
     @media ${breakpoints.smartphone} {
+      justify-content: center;
       overflow: hidden;
     }
 
@@ -61,8 +69,8 @@ export const Item = styled.li`
       order: 2;
 
       @media ${breakpoints.smartphone} {
+        margin-left: 0px;
         margin-top: 42px;
-        width: 100%;
       }
     }
   }
@@ -72,9 +80,7 @@ export const ItemImage = styled.img`
   width: 50%;
 
   @media ${breakpoints.smartphone} {
-    left: calc(50vw - 23%);
-    position: relative;
-    top: -40px;
+    max-width: 550px;
     width: 100%;
   }
 `

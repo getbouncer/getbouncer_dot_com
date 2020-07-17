@@ -28,7 +28,7 @@ const PricingPlans = ({ data }) => (
             <CardText>{card.primary.tier_description}</CardText>
             <CardPrice>{card.primary.tier_price}</CardPrice>
             <CtaWrapper>
-              <CtaButton text={card.primary.tier_cta} to="/" />
+              <CtaButton isInternal={card.primary.tier_link_internal} text={card.primary.tier_cta} to={card.primary.tier_link} />
             </CtaWrapper>
             <Smartphone>
               <CardFooter>

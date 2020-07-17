@@ -54,6 +54,8 @@ export const query = graphql`
           ... on PrismicPricingBodyTier {
             id
             primary {
+              tier_link_internal
+              tier_link
               tier_cta
               tier_description
               tier_name
