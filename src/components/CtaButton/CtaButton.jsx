@@ -6,7 +6,7 @@ const CtaButton = ({ inverted, isInternal, text, to }) => {
   if (to) {
     if (isInternal) {
       return (
-        <InternalLink to={to} inverted={inverted}>
+        <InternalLink to={to} inverted={`${inverted}`}>
           {text}
         </InternalLink>
       )

@@ -45,6 +45,12 @@
       "config": {
         "label": "CTA Button"
       }
+    },
+    "login_button" : {
+      "type": "Text",
+      "config": {
+        "label": "Login Button"
+      }
     }
   },
   "Footer": {
@@ -133,6 +139,14 @@
         "constraint": {},
         "thumbnails": [],
         "label": "Background"
+      }
+    }
+  },
+  "Identification" : {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "uid"
       }
     }
   }

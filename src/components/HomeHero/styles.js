@@ -61,6 +61,7 @@ export const RightIllustration = styled.img`
   bottom: 0;
   transform: translateY(80px);
   margin: auto;
+  min-width: 36%;
   position: absolute;
   right: -5vh;
   width: calc(100% - 793px);

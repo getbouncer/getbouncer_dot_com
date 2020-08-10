@@ -81,6 +81,10 @@ export const FlexContainer = styled.div`
   }
 `
 
+export const CtaContainer = styled.div`
+  margin-left: auto;
+`
+
 export const ProductSubMenu = styled.div`
   background: white;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
@@ -99,7 +103,6 @@ export const ProductList = styled.ul`
   display: flex;
   justify-content: space-between;
   position: relative;
-  width: 400px;
 
   @media ${breakpoints.smartphone} {
     display: block;
@@ -108,11 +111,16 @@ export const ProductList = styled.ul`
 
   li {
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 200px;
     justify-content: center;
     padding: 24px 0;
     position: relative;
     transition: background 0.2s ease-out;
+    border-right: 1px solid #e9ecfe;
+
+    &:last-of-type {
+      border-right: none;
+    }
 
     @media ${breakpoints.smartphone} {
       display: block;
@@ -137,20 +145,6 @@ export const ProductList = styled.ul`
       }
     }
   }
-
-  &::after {
-    background-color: #e9ecfe;
-    content: '';
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 1px;
-
-    @media ${breakpoints.smartphone} {
-      position: relative;
-    }
-  }
 `
 
 export const LogoItem = styled.img`
@@ -172,10 +166,6 @@ export const ProductLink = styled(Link)`
   position: absolute;
   top: 0;
   width: 100%;
-`
-
-export const CtaContainer = styled.div`
-  margin-left: auto;
 `
 
 export const BurgerContainer = styled.div`

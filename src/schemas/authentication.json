@@ -1,0 +1,80 @@
+{
+  "Main": {
+    "sign_in": {
+      "type": "Text",
+      "config": {
+        "label": "Sign In"
+      }
+    },
+    "sign_up": {
+      "type": "Text",
+      "config": {
+        "label": "Sign Up"
+      }
+    },
+    "sign_in_button": {
+      "type": "Text",
+      "config": {
+        "label": "Sign In Button"
+      }
+    },
+    "sign_up_button": {
+      "type": "Text",
+      "config": {
+        "label": "Sign Up Button"
+      }
+    },
+    "forgot_password": {
+      "type": "Text",
+      "config": {
+        "label": "Forgot Password"
+      }
+    },
+    "verify_email": {
+      "type": "Text",
+      "config": {
+        "label": "verify_email"
+      }
+    },
+    "authentication_option": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "option_logo": {
+            "type": "Image",
+            "config": {
+              "constraint": { },
+              "thumbnails": [ ],
+              "label": "Option Logo"
+            }
+          },
+          "option_name": {
+            "type": "Text",
+            "config": {
+              "label": "Option Name"
+            }
+          },
+          "option_background_color": {
+            "type": "Color",
+            "config": {
+              "label": "Option Background Color"
+            }
+          },
+          "option_background_color_active": {
+            "type": "Color",
+            "config": {
+              "label": "Option Background Color Active"
+            }
+          },
+          "option_color": {
+            "type": "Color",
+            "config": {
+              "label": "Option Color"
+            }
+          }
+        },
+        "label": "Authentication Option"
+      }
+    }
+  }
+}

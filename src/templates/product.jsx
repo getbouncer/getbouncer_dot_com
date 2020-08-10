@@ -52,6 +52,7 @@ export const query = graphql`
           text
         }
         product_cta
+        product_cta_link
         show_get_started
         body {
           ... on PrismicProductBodyHeadlineListIllustration {

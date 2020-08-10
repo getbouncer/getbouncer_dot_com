@@ -7,6 +7,7 @@ import { InnerContainer, Image, ProductLogo, Headline, CtaContainer } from './st
 const ProductHero = ({ data }) => {
   const {
     product_cta: productCta,
+    product_cta_link: productCtaLink,
     product_headline: productHeadline,
     product_image: productImage,
     product_logo: productLogo,
@@ -21,7 +22,7 @@ const ProductHero = ({ data }) => {
           <Headline dangerouslySetInnerHTML={{ __html: productHeadline.html }} />
           {productCta && (
             <CtaContainer>
-              <CtaButton isInternal to="/contact" text={productCta} />
+              <CtaButton isInternal to={productCtaLink} text={productCta} />
             </CtaContainer>
           )}
         </div>

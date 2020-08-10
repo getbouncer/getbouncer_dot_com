@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
               uid
             }
           }
-        },
+        }
         allPrismicUproduct {
           edges {
             node {

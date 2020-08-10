@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Container from '~globals/Container'
 import CtaButton from '~components/CtaButton'
 import { AboveSmartphone, Smartphone } from '~components/Media'
@@ -50,6 +51,7 @@ const Header = ({ location }) => {
       prismicGlobals {
         data {
           cta_button
+          login_button
           products_menu
           pricing_menu
           resources_menu
@@ -83,6 +85,10 @@ const Header = ({ location }) => {
   return (
     <header>
       <Container isLarge>
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+          <script src="drift.js" />
+        </Helmet>
         <AboveSmartphone>
           <InnerContainer>
             <Link to="/">
@@ -93,7 +99,7 @@ const Header = ({ location }) => {
                 <span>{productsMenu}</span>
                 <img src={arrowDown} alt="Arrow down icon" />
                 <ProductSubMenu>
-                  <ProductList>
+                  <ProductList style={{ width: `${products.length * 200}px` }}>
                     {products.map(product => (
                       <li key={product.node.id}>
                         <div>

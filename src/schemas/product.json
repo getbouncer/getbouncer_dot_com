@@ -43,6 +43,12 @@
         "label": "Product CTA"
       }
     },
+    "product_cta_link": {
+      "type": "Text",
+      "config": {
+        "label": "Product CTA Link"
+      }
+    },
     "show_get_started": {
       "type": "Boolean",
       "config": {

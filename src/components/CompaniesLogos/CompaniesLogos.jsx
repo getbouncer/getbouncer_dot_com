@@ -17,6 +17,7 @@ const CompaniesLogos = () => {
       }
     }
   `)
+
   const { companies_logo: companiesLogos } = data.prismicGlobals.data
 
   return (
