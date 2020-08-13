@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button, VerticalSplitter } from './styles'
+import { Button, VerticalSplitter } from '~styles/global'
 
 const AuthenticationVerify = ({
   setAuthenticationFormState,

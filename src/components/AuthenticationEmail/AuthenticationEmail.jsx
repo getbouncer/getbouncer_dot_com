@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import firebase from 'gatsby-plugin-firebase'
-import { EntryField, Button, ButtonContainer, SwitchOption, OptionsContainer, VerticalSplitter } from './styles'
+import { Button, CenteredRow, CenteredColumn, Input, TextButton, VerticalSplitter } from '~styles/global'
 
 const signInWithEmail = (setAuthenticationFormState, setError) => {
   const email = document.getElementById('email').value
@@ -44,21 +44,21 @@ const AuthenticationEmail = ({
   setAuthenticationFormState,
   setErrorFormState,
 }) => (
-  <OptionsContainer>
-    <EntryField id="email" type="text" placeholder="Email" />
+  <CenteredColumn>
+    <Input id="email" type="text" placeholder="Email" />
     {
       (authenticationStateInformation.state === 'signupemail') ?
-        (<EntryField id="name" type="text" placeholder="Name" />) :
+        (<Input id="name" type="text" placeholder="Name" />) :
         (<></>)
     }
-    <EntryField id="password" type="password" placeholder="Password" />
+    <Input id="password" type="password" placeholder="Password" />
     {
       (authenticationStateInformation.state === 'signupemail') ?
-        (<EntryField id="password_confirmation" type="password" placeholder="Confirm Password" />) :
+        (<Input id="password_confirmation" type="password" placeholder="Confirm Password" />) :
         (<></>)
     }
-    <OptionsContainer>
-      <ButtonContainer>
+    <CenteredColumn>
+      <CenteredRow>
         <Button onClick={() => emailFunctions[authenticationStateInformation.state](
           setAuthenticationFormState,
           setErrorFormState,
@@ -69,15 +69,15 @@ const AuthenticationEmail = ({
         {
           (authenticationStateInformation.state === 'signinemail') ?
             (
-              <SwitchOption type="submit" onClick={() => setAuthenticationFormState('resetpassword')}>
+              <TextButton type="submit" onClick={() => setAuthenticationFormState('resetpassword')}>
                 { forgotPasswordText }
-              </SwitchOption>
+              </TextButton>
             ) :
             (<></>)
         }
-      </ButtonContainer>
+      </CenteredRow>
       <VerticalSplitter />
-      <SwitchOption
+      <TextButton
         type="submit"
         onClick={() => {
           setErrorFormState('')
@@ -85,8 +85,8 @@ const AuthenticationEmail = ({
         }}
       >
         Go Back
-      </SwitchOption>
-      <SwitchOption
+      </TextButton>
+      <TextButton
         type="submit"
         onClick={() => {
           setErrorFormState('')
@@ -94,9 +94,9 @@ const AuthenticationEmail = ({
         }}
       >
         {authenticationStateInformation.bottomText}
-      </SwitchOption>
-    </OptionsContainer>
-  </OptionsContainer>
+      </TextButton>
+    </CenteredColumn>
+  </CenteredColumn>
 )
 
 AuthenticationEmail.propTypes = {

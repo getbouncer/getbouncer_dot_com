@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DashboardUser = (authUser, signOut) => (
+const ScoreUser = (authUser, signOut) => (
   <div>
     <div>
       { authUser.email }
@@ -20,4 +20,4 @@ const DashboardUser = (authUser, signOut) => (
   </div>
 )
 
-export default DashboardUser
+export default ScoreUser

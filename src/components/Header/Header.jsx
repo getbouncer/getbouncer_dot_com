@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import firebase from 'gatsby-plugin-firebase'
 import { useStaticQuery, graphql, Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Container from '~globals/Container'
@@ -9,6 +10,7 @@ import {
   Burger,
   BurgerContainer,
   BurgerWrap,
+  Button,
   CtaContainer,
   DropdownItem,
   FlexContainer,
@@ -78,8 +80,14 @@ const Header = ({ location }) => {
 
   const products = data.products.edges
 
+  const [authState, setAuthState] = React.useState(firebase.auth().currentUser != null)
+
   useEffect(() => {
     setActiveBurger(false)
+    firebase.auth().onAuthStateChanged(() => {
+      if (firebase.auth().currentUser) setAuthState(true)
+      else setAuthState(false)
+    })
   }, [location])
 
   return (
@@ -121,6 +129,19 @@ const Header = ({ location }) => {
             </NavList>
             <CtaContainer>
               <CtaButton to="/contact" text={buttonText} />
+              {
+                ((authState) ? (
+                  <Button onClick={
+                    () => {
+                      firebase.auth().signOut()
+                      setAuthState(false)
+                    }
+                  }
+                  >
+                    Sign Out
+                  </Button>
+                ) : (<></>))
+              }
             </CtaContainer>
           </InnerContainer>
         </AboveSmartphone>

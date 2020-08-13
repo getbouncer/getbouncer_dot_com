@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import firebase from 'gatsby-plugin-firebase'
 import AuthenticationButton from '~components/AuthenticationButton'
-import { ButtonContainer, SwitchOption, VerticalSplitter } from './styles'
+import { CenteredColumn, TextButton, VerticalSplitter } from '~styles/global'
 
 /**
  * Provides the functionality for signing in with Google
@@ -46,7 +46,7 @@ const AuthenticationOptions = ({
   }
 
   return (
-    <ButtonContainer>
+    <CenteredColumn>
       {authenticationOptions.map(option => (
         <div key={option.option_name}>
           <AuthenticationButton
@@ -62,7 +62,7 @@ const AuthenticationOptions = ({
           <VerticalSplitter />
         </div>
       ))}
-      <SwitchOption
+      <TextButton
         type="submit"
         onClick={() => {
           setErrorFormState('')
@@ -70,8 +70,8 @@ const AuthenticationOptions = ({
         }}
       >
         {authenticationStateInformation.bottomText}
-      </SwitchOption>
-    </ButtonContainer>
+      </TextButton>
+    </CenteredColumn>
   )
 }
 

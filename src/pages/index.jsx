@@ -1,18 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import styled from '@emotion/styled'
-import BackgroundImage from 'gatsby-background-image'
+import { BackgroundContainer } from '~styles/global'
 import SEO from '~components/SEO'
 import HomeHero from '~components/HomeHero'
 import HomeSlices from '~components/HomeSlices'
 import GetStarted from '~components/GetStarted'
-
-const BackgroundContainer = styled(BackgroundImage)`
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 100px;
-`
 
 const IndexPage = ({ data }) => {
   const { backgroundImage, homepage } = data

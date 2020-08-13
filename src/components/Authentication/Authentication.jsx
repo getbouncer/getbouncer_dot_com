@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { SwitchTransition, Transition } from 'react-transition-group'
+import Link from 'gatsby-link'
 import AuthenticationEmail from '~components/AuthenticationEmail'
 import AuthenticationOptions from '~components/AuthenticationOptions'
 import AuthenticationReset from '~components/AuthenticationReset'
 import AuthenticationVerify from '~components/AuthenticationVerify'
-import {
-  AuthenticationContainer,
-  ErrorContainer,
-  transitionStyles } from './styles'
+import { ErrorContainer, transitionStyles } from './styles'
+import { CenteredDialog } from '~styles/global'
 
 const Authentication = ({
   authenticationFormState,
@@ -24,10 +23,10 @@ const Authentication = ({
     sign_up: signUpText,
     sign_up_button: signUpButton,
     verify_email: verifyEmailText,
-  } = data.prismicLogin.data
+  } = data.data
 
   return (
-    <AuthenticationContainer>
+    <CenteredDialog>
       <SwitchTransition>
         <Transition
           key={authenticationFormState}
@@ -117,14 +116,21 @@ const Authentication = ({
                     )
                 }
               })()}
+              <ErrorContainer>
+                {errorFormState}
+              </ErrorContainer>
+              <ErrorContainer>
+                By continuing, you are indicating that you accept our
+                <Link to="/tos"> Terms of Service </Link>
+                and
+                <Link to="/privacy"> Privacy Policy </Link>
+                .
+              </ErrorContainer>
             </div>
           )}
         </Transition>
       </SwitchTransition>
-      <ErrorContainer>
-        {errorFormState}
-      </ErrorContainer>
-    </AuthenticationContainer>
+    </CenteredDialog>
   )
 }
 

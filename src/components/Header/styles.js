@@ -83,6 +83,10 @@ export const FlexContainer = styled.div`
 
 export const CtaContainer = styled.div`
   margin-left: auto;
+
+  button {
+    margin-left: 20px;
+  }
 `
 
 export const ProductSubMenu = styled.div`
@@ -158,6 +162,15 @@ export const Text = styled.p`
   @media ${breakpoints.smartphone} {
     max-width: 100%;
   }
+`
+
+export const Button = styled.button`
+  background-color: ${theme.colors.blue};
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 18px;
 `
 
 export const ProductLink = styled(Link)`

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import firebase from 'gatsby-plugin-firebase'
-import { ButtonContainer, SwitchOption, FormContainer, EntryField, Button, VerticalSplitter } from './styles'
+import { Button, CenteredColumn, CenteredRow, Input, TextButton, VerticalSplitter } from '~styles/global'
 
 const resetPasswordWithEmail = (setAuthenticationFormState, setErrorFormState) => {
   const email = document.getElementById('email').value
@@ -15,18 +15,18 @@ const resetPasswordWithEmail = (setAuthenticationFormState, setErrorFormState) =
 }
 
 const AuthenticationReset = ({ setAuthenticationFormState, setErrorFormState }) => (
-  <FormContainer>
-    <EntryField id="email" type="text" placeholder="Email" />
+  <CenteredColumn>
+    <Input id="email" type="text" placeholder="Email" />
     <VerticalSplitter />
-    <ButtonContainer>
+    <CenteredRow>
       <Button onClick={() => resetPasswordWithEmail(setAuthenticationFormState, setErrorFormState)}>
         Reset
       </Button>
-      <SwitchOption type="submit" onClick={() => setAuthenticationFormState('signinemail')}>
+      <TextButton type="submit" onClick={() => setAuthenticationFormState('signinemail')}>
         Go back
-      </SwitchOption>
-    </ButtonContainer>
-  </FormContainer>
+      </TextButton>
+    </CenteredRow>
+  </CenteredColumn>
 )
 
 AuthenticationReset.propTypes = {
