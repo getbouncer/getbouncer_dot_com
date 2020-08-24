@@ -6168,6 +6168,13 @@ gatsby-plugin-alias-imports@^1.0.5:
   dependencies:
     "@babel/runtime" "^7.2.0"
 
+gatsby-plugin-drift@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-drift/-/gatsby-plugin-drift-1.0.0.tgz#2c26ac9f588908c888d3782f694d3e23cd06950f"
+  integrity sha512-rEyN8En+BK/SgSLb2mNrVTwMAQtnAJv5f0X444X8ikJJ8byAJFGOyHlbuK0rVl/QvMgcw9E65cW3PhY6wrVCuA==
+  dependencies:
+    babel-runtime "^6.26.0"
+
 gatsby-plugin-emotion@^4.3.3:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.6.tgz#d4b042c5efe62dc735484f09610ccf2a7f4891dd"
@@ -6178,6 +6185,14 @@ gatsby-plugin-emotion@^4.3.3:
 gatsby-plugin-eslint@^2.0.8:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.8.tgz#1ff7f546a427d274dc2de3932ba29822aae330c3"
+
+gatsby-plugin-google-analytics@^2.3.13:
+  version "2.3.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.13.tgz#46f78f4df11cc773d44e5909ea491c8f8c0e6774"
+  integrity sha512-K/6c9iByR8uDpFZuJrappjyMsVtWFwPyAkRlXFHhq2mmNtgZeRVKFf5XoGiOHCeMPEpBGE58LLana/F01LLteQ==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+    minimatch "3.0.4"
 
 gatsby-plugin-imgix@^0.8.1:
   version "0.8.1"
@@ -8990,7 +9005,7 @@ minimatch@3.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:

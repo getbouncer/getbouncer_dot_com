@@ -32,6 +32,19 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: 'UA-176052879-1',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-drift',
+      options: {
+        appId: '9cxskdrwwp8x',
+      },
+    },
+    {
       resolve: 'gatsby-source-prismic',
       options: {
         repositoryName: 'bouncer',
