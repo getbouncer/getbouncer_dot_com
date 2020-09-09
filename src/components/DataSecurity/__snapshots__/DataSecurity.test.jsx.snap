@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data Security renders correctly 1`] = `
+<section
+  css={
+    Object {
+      "map": undefined,
+      "name": "2n60pf",
+      "next": undefined,
+      "styles": "
+    background-image: url(test-file-stub);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+
+    @media (max-width: 920px) {
+      padding: 60px 32px 68px;
+    }
+  ",
+      "toString": [Function],
+    }
+  }
+>
+  <img
+    alt="Data icon"
+    className="css-1y3nu44"
+    src="test-file-stub"
+  />
+  <h2
+    className="css-jfw3ak"
+  >
+    Data handling and security
+  </h2>
+  <div
+    className="css-pm9scx"
+  >
+    Bouncer Card is designed to keep user data safe and secure, and separates PCI data handling outside of Bouncer’s servers. We do analysis locally on the user’s mobile phone, and send back a subset of model output data that is stripped of image and PAN. This approach is PCI and GDPR ready.
+  </div>
+</section>
+`;

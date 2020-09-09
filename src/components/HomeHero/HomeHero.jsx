@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql, useStaticQuery } from 'gatsby'
 import Container from '~globals/Container'
 import CtaButton from '~components/CtaButton'
 import CompaniesLogos from '~components/CompaniesLogos'
@@ -14,7 +15,7 @@ import {
   Wrapper,
 } from './styles'
 
-const HomeHero = ({ data }) => {
+export const PureHomeHero = ({ data, logos }) => {
   const {
     hero_cta: heroCta,
     hero_description: heroDescription,
@@ -41,11 +42,35 @@ const HomeHero = ({ data }) => {
           </Smartphone>
         </ContentContainer>
         <LogosContainer>
-          <CompaniesLogos />
+          <CompaniesLogos logos={logos} />
         </LogosContainer>
       </Container>
     </Wrapper>
   )
+}
+
+PureHomeHero.propTypes = {
+  data: PropTypes.shape().isRequired,
+  logos: PropTypes.shape().isRequired,
+}
+
+export const HomeHero = ({ data }) => {
+  const logos = useStaticQuery(graphql`
+    query LogosQuery {
+      prismicGlobals {
+        data {
+          companies_logo {
+            company_logo {
+              alt
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return <PureHomeHero data={data} logos={logos.prismicGlobals.data} />
 }
 
 HomeHero.propTypes = {

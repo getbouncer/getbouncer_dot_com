@@ -1,34 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { css } from '@emotion/core'
 import CtaButton from '~components/CtaButton'
 import { breakpoints } from '~styles'
 import { Icon, Headline, Text } from './styles'
 
-const GetStarted = () => {
-  const data = useStaticQuery(graphql`
-    query GetStartedQuery {
-      prismicGlobals {
-        data {
-          background {
-            url
-          }
-          cta_text
-          icon {
-            url
-            alt
-          }
-          title {
-            text
-          }
-          text {
-            html
-          }
-        }
-      }
-    }
-  `)
-  const { background, cta_text: ctaText, icon, text, title } = data.prismicGlobals.data
+export const PureGetStarted = ({ data }) => {
+  const { background, cta_text: ctaText, icon, text, title } = data
   const backgroundStyles = css`
     background-image: url(${background.url});
     background-position: center center;
@@ -51,6 +30,37 @@ const GetStarted = () => {
       <CtaButton isInternal text={ctaText} to="/contact" inverted />
     </section>
   )
+}
+
+PureGetStarted.propTypes = {
+  data: PropTypes.shape().isRequired,
+}
+
+export const GetStarted = () => {
+  const data = useStaticQuery(graphql`
+    query GetStartedQuery {
+      prismicGlobals {
+        data {
+          background {
+            url
+          }
+          cta_text
+          icon {
+            url
+            alt
+          }
+          title {
+            text
+          }
+          text {
+            html
+          }
+        }
+      }
+    }
+  `)
+
+  return <PureGetStarted data={data.prismicGlobals.data} />
 }
 
 export default GetStarted

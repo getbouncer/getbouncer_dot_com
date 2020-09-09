@@ -23,47 +23,9 @@ import {
 } from './styles'
 import arrowDown from '~images/arrow-down.svg'
 
-const Header = ({ location }) => {
+export const PureHeader = ({ globals, location, products }) => {
   const [activeBurger, setActiveBurger] = useState(false)
   const [showProductsMobile, setShowProductsMobile] = useState(false)
-
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      products: allPrismicProduct {
-        edges {
-          node {
-            id
-            uid
-            data {
-              product_logo {
-                url
-                alt
-              }
-              product_headline_home {
-                text
-              }
-            }
-          }
-        }
-      }
-
-      prismicGlobals {
-        data {
-          cta_button
-          products_menu
-          pricing_menu
-          resources_menu
-          logo {
-            alt
-            url
-          }
-          documentation_link {
-            url
-          }
-        }
-      }
-    }
-  `)
 
   const {
     cta_button: buttonText,
@@ -72,9 +34,7 @@ const Header = ({ location }) => {
     pricing_menu: pricingMenu,
     products_menu: productsMenu,
     resources_menu: resourcesMenu,
-  } = data.prismicGlobals.data
-
-  const products = data.products.edges
+  } = globals
 
   useEffect(() => {
     setActiveBurger(false)
@@ -166,6 +126,60 @@ const Header = ({ location }) => {
         </BurgerContainer>
       </Smartphone>
     </header>
+  )
+}
+
+PureHeader.propTypes = {
+  globals: PropTypes.shape().isRequired,
+  location: PropTypes.shape().isRequired,
+  products: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+}
+
+export const Header = ({ location }) => {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      products: allPrismicProduct {
+        edges {
+          node {
+            id
+            uid
+            data {
+              product_logo {
+                url
+                alt
+              }
+              product_headline_home {
+                text
+              }
+            }
+          }
+        }
+      }
+
+      prismicGlobals {
+        data {
+          cta_button
+          products_menu
+          pricing_menu
+          resources_menu
+          logo {
+            alt
+            url
+          }
+          documentation_link {
+            url
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <PureHeader
+      globals={data.prismicGlobals.data}
+      location={location}
+      products={data.products.edges}
+    />
   )
 }
 

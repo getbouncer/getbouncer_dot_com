@@ -1,33 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import Container from '~globals/Container'
 import { AboveSmartphone } from '~components/Media'
 import { FooterElem, InnerContainer, StyledLink, NavSocials } from './styles'
 
-const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query FooterQuery {
-      prismicGlobals {
-        data {
-          minimal_logo {
-            alt
-            url
-          }
-          socials {
-            social_link {
-              url
-            }
-            social_logo {
-              alt
-              url
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const { minimal_logo: minimalLogo, socials } = data.prismicGlobals.data
+export const PureFooter = ({ data }) => {
+  const { minimal_logo: minimalLogo, socials } = data
 
   return (
     <FooterElem>
@@ -51,6 +30,36 @@ const Footer = () => {
       </Container>
     </FooterElem>
   )
+}
+
+PureFooter.propTypes = {
+  data: PropTypes.shape().isRequired,
+}
+
+export const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      prismicGlobals {
+        data {
+          minimal_logo {
+            alt
+            url
+          }
+          socials {
+            social_link {
+              url
+            }
+            social_logo {
+              alt
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return <PureFooter data={data.prismicGlobals.data} />
 }
 
 export default Footer

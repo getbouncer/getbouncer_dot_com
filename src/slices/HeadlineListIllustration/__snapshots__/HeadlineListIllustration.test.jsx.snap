@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadlineListIllustration renders correctly 1`] = `
+<div
+  className="css-1fywgw4"
+>
+  <section
+    className="css-vp3p26"
+  >
+    <div
+      className="css-1mci2r3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<h1>headline</h1>",
+        }
+      }
+    />
+    <div
+      className="css-1ma0d39"
+    >
+      <div
+        className="css-1bivl2p"
+      >
+        <div
+          className="css-1r631za"
+        >
+          <img
+            alt="item 1 icon"
+            className="css-10n7if5"
+            src="https://www.example.com/item_1_icon.svg"
+          />
+          <h3
+            className="css-exhu38"
+          >
+            item 1 title
+          </h3>
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>item description</p>",
+              }
+            }
+          />
+        </div>
+        <div
+          className="css-1r631za"
+        >
+          <img
+            alt="item 2 icon"
+            className="css-10n7if5"
+            src="https://www.example.com/item_2_icon.svg"
+          />
+          <h3
+            className="css-exhu38"
+          >
+            item 2 title
+          </h3>
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>item description</p>",
+              }
+            }
+          />
+        </div>
+      </div>
+      <img
+        alt="illustration"
+        className="css-8uca2l"
+        src="https://www.example.com/illustration.png"
+      />
+    </div>
+  </section>
+</div>
+`;

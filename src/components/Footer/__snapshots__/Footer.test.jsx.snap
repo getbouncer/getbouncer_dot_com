@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="css-709yn1"
+>
+  <div
+    className="css-sdcyqc"
+  >
+    <div
+      className="css-ih8zfl"
+    >
+      <a
+        className="css-1uxekxc"
+        href="/"
+      >
+        <img
+          alt="logo"
+          src="https://www.example.com/logo"
+        />
+      </a>
+    </div>
+  </div>
+</footer>
+`;

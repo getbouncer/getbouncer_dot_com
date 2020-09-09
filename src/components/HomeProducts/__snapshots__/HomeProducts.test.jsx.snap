@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeProduct renders correctly 1`] = `
+<section
+  className="css-4hxivr"
+>
+  <div
+    className="css-1fywgw4"
+  >
+    <div
+      className="css-1pp6h0w"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<h1>products headline</h1>",
+        }
+      }
+    />
+    <ul>
+      <li
+        className="css-1n9onjb"
+      >
+        <img
+          alt="product 1 image home"
+          className="css-1uwazzl"
+          src="https://www.example.com/product_1_image_home.png"
+        />
+        <div
+          className="css-1ovmt8n"
+        >
+          <img
+            alt="product 1 logo"
+            className="css-dqfcdz"
+            src="https://www.example.com/product_1_logo.png"
+          />
+          <div
+            className="css-tef5ix"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<h3>product 1 headline home</h3>",
+              }
+            }
+          />
+          <div
+            className="css-1to6z5u"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>product 1 description home</p>",
+              }
+            }
+          />
+          <a
+            className="css-e1lh64"
+            href="/product 1"
+          >
+            product 1 cta home
+          </a>
+        </div>
+      </li>
+      <li
+        className="css-1n9onjb"
+      >
+        <img
+          alt="product 2 image home"
+          className="css-1uwazzl"
+          src="https://www.example.com/product_2_image_home.png"
+        />
+        <div
+          className="css-1ovmt8n"
+        >
+          <img
+            alt="product 2 logo"
+            className="css-dqfcdz"
+            src="https://www.example.com/product_2_logo.png"
+          />
+          <div
+            className="css-tef5ix"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<h3>product 2 headline home</h3>",
+              }
+            }
+          />
+          <div
+            className="css-1to6z5u"
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<p>product 2 description home</p>",
+              }
+            }
+          />
+          <a
+            className="css-e1lh64"
+            href="/product 2"
+          >
+            product 2 cta home
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompaniesLogos renders correctly 1`] = `
+<ul
+  className="css-i0unku"
+>
+  <li
+    className="css-ecly76"
+  >
+    <img
+      alt="logo 1"
+      src="https://www.example.com/logo_1.svg"
+    />
+  </li>
+  <li
+    className="css-ecly76"
+  >
+    <img
+      alt="logo 2"
+      src="https://www.example.com/logo_2.svg"
+    />
+  </li>
+</ul>
+`;

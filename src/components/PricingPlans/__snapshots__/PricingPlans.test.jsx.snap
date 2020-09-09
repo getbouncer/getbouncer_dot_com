@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PricingPlans renders correctly 1`] = `
+<section
+  className="css-161o3a0"
+>
+  <div
+    className="css-1fywgw4"
+  >
+    <h1
+      className="css-hq5whk"
+    >
+      headline
+    </h1>
+    <div
+      className="css-d71ng7"
+    >
+      <div
+        className="css-1yts8x9"
+      >
+        <h3>
+          tier 1
+        </h3>
+        <p
+          className="css-a5dgoa"
+        >
+          tier 1 description
+        </p>
+        <span
+          className="css-1tkq62a"
+        >
+          tier 1 price
+        </span>
+        <div
+          className="css-1yltisf"
+        >
+          <a
+            className="css-e1lh64"
+            href="https://www.example.com/tier_1"
+            inverted={false}
+          >
+            tier 1 cta
+          </a>
+        </div>
+      </div>
+      <div
+        className="css-1yts8x9"
+      >
+        <h3>
+          tier 2
+        </h3>
+        <p
+          className="css-a5dgoa"
+        >
+          tier 2 description
+        </p>
+        <span
+          className="css-1tkq62a"
+        >
+          tier 2 price
+        </span>
+        <div
+          className="css-1yltisf"
+        >
+          <a
+            className="css-e1lh64"
+            href="https://www.example.com/tier_2"
+          >
+            tier 2 cta
+          </a>
+        </div>
+      </div>
+    </div>
+    <p
+      className="css-hbrf8g"
+    >
+      text
+       
+      <a
+        className="css-13zgsqv"
+        href="/contact"
+      >
+        Let’s chat.
+      </a>
+    </p>
+  </div>
+</section>
+`;

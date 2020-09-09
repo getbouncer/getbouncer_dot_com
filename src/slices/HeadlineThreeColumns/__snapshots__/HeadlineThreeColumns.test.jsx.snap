@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadlineThreeColumns renders correctly 1`] = `
+<section>
+  <div
+    className="css-1fywgw4"
+  >
+    <div
+      className="css-14ndujd"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<h1>headline</h1>",
+        }
+      }
+    />
+    <ul
+      className="css-2mxeky"
+    >
+      <li
+        className="css-iylok8"
+      >
+        <img
+          alt="item 1 image"
+          className="css-1mhm7c2"
+          src="https://www.example.com/item_1_image.png"
+        />
+        <h3
+          className="css-5ooxch"
+        >
+          item 1 title
+        </h3>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>item description</p>",
+            }
+          }
+        />
+      </li>
+      <li
+        className="css-iylok8"
+      >
+        <img
+          alt="item 2 image"
+          className="css-1mhm7c2"
+          src="https://www.example.com/item_2_image.png"
+        />
+        <h3
+          className="css-5ooxch"
+        >
+          item 2 title
+        </h3>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>item description</p>",
+            }
+          }
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+`;

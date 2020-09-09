@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IllustrationAndContent renders correctly 1`] = `
+<section
+  className="css-ech9b0"
+>
+  <div
+    className="css-1fywgw4"
+  >
+    <div
+      className="css-1pgnyeq"
+    >
+      <img
+        alt="illustration"
+        src="https://www.example.com/illustration.png"
+      />
+      <div>
+        <div
+          className="css-fqy461"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<h1>headline</h1>",
+            }
+          }
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>body text</p>",
+            }
+          }
+        />
+        <a
+          className="css-e1lh64"
+          href="/contact"
+        >
+          cta text
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+`;
