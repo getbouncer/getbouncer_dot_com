@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewsSlider renders correctly 1`] = `
+<section
+  className="css-fzaw5e"
+>
+  <div
+    className="css-sdcyqc"
+  >
+    <div
+      className="css-faouk5"
+    >
+      <div
+        className="css-1e2ahhp"
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <ul
+          className="css-erihxk"
+        >
+          <li
+            className="css-5izmqs"
+          >
+            <li
+              className="css-nrckiy"
+            >
+              <img
+                alt="company 1 logo"
+                src="https://www.example.com/company_1_logo"
+              />
+            </li>
+            <p
+              className="css-11njosq"
+            >
+              review 1
+            </p>
+            <span
+              className="css-17odb7k"
+            >
+              review 1 author
+            </span>
+          </li>
+          <li
+            className="css-5izmqs"
+          >
+            <li
+              className="css-nrckiy"
+            >
+              <img
+                alt="company 2 logo"
+                src="https://www.example.com/company_2_logo"
+              />
+            </li>
+            <p
+              className="css-11njosq"
+            >
+              review 2
+            </p>
+            <span
+              className="css-17odb7k"
+            >
+              review 2 author
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="css-f2awql"
+        onClick={[Function]}
+      >
+        <img
+          alt="Previous arrow"
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="css-1m70fi3"
+        onClick={[Function]}
+      >
+        <img
+          alt="Next arrow"
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+    <ul
+      className="css-znwfed"
+    >
+      <li
+        className="css-qwhy2v"
+        onClick={[Function]}
+      >
+        <img
+          alt="company 1 logo"
+          src="https://www.example.com/company_1_logo"
+        />
+      </li>
+      <li
+        className="css-qwhy2v"
+        onClick={[Function]}
+      >
+        <img
+          alt="company 2 logo"
+          src="https://www.example.com/company_2_logo"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+`;

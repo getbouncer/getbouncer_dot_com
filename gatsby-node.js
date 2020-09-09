@@ -1,12 +1,11 @@
-const wrapper = promise =>
-  promise.then(result => {
-    if (result.errors) {
-      throw result.errors
-    }
-    return result
-  })
+const wrapper = promise => promise.then(result => {
+  if (result.errors) {
+    throw result.errors
+  }
+  return result
+})
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   const productTemplate = require.resolve('./src/templates/product.jsx')

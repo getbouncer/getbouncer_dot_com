@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlansComparison renders correctly 1`] = `
+<section
+  className="css-my4pmd"
+>
+  <div
+    className="css-1fywgw4"
+  >
+    <div
+      className="css-kxswky"
+    >
+      <h2>
+        comparison headline
+      </h2>
+    </div>
+    <div
+      className="css-1i82ydo"
+    >
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          className="css-tdepjq"
+        >
+          <h3>
+            tier 1
+          </h3>
+          <span>
+            tier 1 short description
+          </span>
+        </div>
+        <div
+          className="css-tdepjq"
+        >
+          <h3>
+            tier 2
+          </h3>
+          <span>
+            tier 2 short description
+          </span>
+        </div>
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          Scan any card
+        </div>
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          Verify card in real time
+        </div>
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          24/7 support, email, and live chat
+        </div>
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          SLA guarantees
+        </div>
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          Custom UI
+        </div>
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          Live integration help
+        </div>
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+      <div
+        className="css-1n9sbj9"
+      >
+        <div
+          className="css-tdepjq"
+        >
+          Bouncer’s Fraud Score
+        </div>
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          className="css-tdepjq"
+        />
+        <div
+          checked={true}
+          className="css-sma4tl"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductHero renders correctly 1`] = `
+<div
+  className="css-1fywgw4"
+>
+  <div
+    className="css-1gv4vrc"
+  >
+    <img
+      alt="product image"
+      className="css-k5imqe"
+      src="https://www.example.com/product_image.png"
+    />
+    <div>
+      <img
+        alt="product logo"
+        className="css-795m1v"
+        src="https://www.example.com/product_logo.svg"
+      />
+      <div
+        className="css-s5mp0m"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<h1>product headline</h1>",
+          }
+        }
+      />
+      <div
+        className="css-12sqe98"
+      >
+        <a
+          className="css-e1lh64"
+          href="/contact"
+          inverted={false}
+        >
+          product cta
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

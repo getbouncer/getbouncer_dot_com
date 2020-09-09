@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreeStepSlider renders correctly 1`] = `
+<section
+  className="css-9x7bpn"
+>
+  <div
+    className="css-1fywgw4"
+  >
+    <h2
+      className="css-19s06c3"
+    >
+      <strong>
+        How it works
+      </strong>
+    </h2>
+    <div
+      className="css-13kml7o"
+    >
+      <div
+        className="css-1r1mrku"
+      >
+        <div
+          className="css-1wkinha"
+        >
+          <div
+            className="active css-1eqh0g7"
+          >
+            <h3
+              className="css-1txg47e"
+            >
+              step 1 title
+            </h3>
+            <p
+              className="css-1i82ydo"
+            >
+              step 1 description
+            </p>
+          </div>
+          <div
+            className="css-1eqh0g7"
+          >
+            <h3
+              className="css-1txg47e"
+            >
+              step 2 title
+            </h3>
+            <p
+              className="css-1i82ydo"
+            >
+              step 2 description
+            </p>
+          </div>
+          <div
+            className="css-1sfh82d"
+          >
+            <span>
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-14zgpxu"
+      >
+        <div
+          className="active css-qyi9dx"
+        >
+          <p
+            className="css-185zoyr"
+          >
+            illustration 1 title
+          </p>
+          <img
+            alt="step 1 illustration"
+            className="css-1i82ydo"
+            src="https://www.example.com/step_1_illustration.png"
+          />
+        </div>
+        <div
+          className="css-qyi9dx"
+        >
+          <p
+            className="css-185zoyr"
+          >
+            illustration 2 title
+          </p>
+          <img
+            alt="step 2 illustration"
+            className="css-1i82ydo"
+            src="https://www.example.com/step_2_illustration.png"
+          />
+        </div>
+        <div
+          className=" css-ackycl"
+        >
+          <img
+            alt="Arrow"
+            src="test-file-stub"
+          />
+        </div>
+        <div
+          className=" css-nazm9o"
+        >
+          <span>
+            1 second
+          </span>
+          <img
+            alt="Arrow"
+            className="css-1tfw7xt"
+            src="test-file-stub"
+          />
+          <img
+            alt="Arrow"
+            src="test-file-stub"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

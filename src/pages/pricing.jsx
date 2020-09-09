@@ -11,7 +11,7 @@ import { AboveSmartphone } from '~components/Media'
 import Container from '~globals/Container'
 
 const PricingPage = ({ data }) => {
-  const { pricing } = data
+  const { globals, pricing } = data
 
   return (
     <>
@@ -25,7 +25,7 @@ const PricingPage = ({ data }) => {
       </AboveSmartphone>
       <Spacer height={50} />
       <Container>
-        <CompaniesLogos />
+        <CompaniesLogos logos={globals.data} />
       </Container>
       <Spacer height={50} />
       <GetStarted />
@@ -65,6 +65,17 @@ export const query = graphql`
             items {
               tier_feature
             }
+          }
+        }
+      }
+    }
+
+    globals: prismicGlobals {
+      data {
+        companies_logo {
+          company_logo {
+            alt
+            url
           }
         }
       }

@@ -1,23 +1,9 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { LogosList, Logo } from './styles'
 
-const CompaniesLogos = () => {
-  const data = useStaticQuery(graphql`
-    query LogosQuery {
-      prismicGlobals {
-        data {
-          companies_logo {
-            company_logo {
-              alt
-              url
-            }
-          }
-        }
-      }
-    }
-  `)
-  const { companies_logo: companiesLogos } = data.prismicGlobals.data
+const CompaniesLogos = ({ logos }) => {
+  const { companies_logo: companiesLogos } = logos
 
   return (
     <LogosList>
@@ -28,6 +14,10 @@ const CompaniesLogos = () => {
       ))}
     </LogosList>
   )
+}
+
+CompaniesLogos.propTypes = {
+  logos: PropTypes.shape().isRequired,
 }
 
 export default CompaniesLogos

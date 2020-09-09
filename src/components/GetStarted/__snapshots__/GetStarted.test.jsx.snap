@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GetStarted renders correctly 1`] = `
+<section
+  css={
+    Object {
+      "map": undefined,
+      "name": "12bwd2y",
+      "next": undefined,
+      "styles": "
+    background-image: url(www.example.com/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+
+    @media (max-width: 920px) {
+      padding: 60px 32px 68px;
+    }
+  ",
+      "toString": [Function],
+    }
+  }
+>
+  <img
+    alt="icon"
+    className="css-1y3nu44"
+    src="www.example.com/icon.svg"
+  />
+  <h2
+    className="css-7x7zvy"
+  />
+  <div
+    className="css-8xi3kf"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<p>text</p>",
+      }
+    }
+  />
+  <a
+    className="css-1acz3hk"
+    href="/contact"
+    inverted={true}
+  >
+    cta text
+  </a>
+</section>
+`;
