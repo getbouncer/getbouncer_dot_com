@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import PricingPlans from './PricingPlans'
+
+/* eslint-disable no-undef */
 
 describe('PricingPlans', () => {
   it('renders correctly', () => {

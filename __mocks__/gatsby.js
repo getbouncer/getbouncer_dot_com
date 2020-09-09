@@ -1,5 +1,5 @@
 const React = require('react')
-const jest = require('jest')
+/* eslint-disable no-undef */
 
 const gatsby = jest.requireActual('gatsby')
 

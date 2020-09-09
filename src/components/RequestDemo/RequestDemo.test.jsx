@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import RequestDemo from './RequestDemo'
+
+/* eslint-disable no-undef */
 
 describe('RequestDemo', () => {
   it('renders correctly', () => {

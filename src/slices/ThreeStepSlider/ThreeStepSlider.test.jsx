@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import ThreeStepSlider from './ThreeStepSlider'
+
+/* eslint-disable no-undef */
 
 describe('ThreeStepSlider', () => {
   it('renders correctly', () => {

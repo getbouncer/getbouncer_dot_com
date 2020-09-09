@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import HeadlineThreeColumns from './HeadlineThreeColumns'
+
+/* eslint-disable no-undef */
 
 describe('HeadlineThreeColumns', () => {
   it('renders correctly', () => {

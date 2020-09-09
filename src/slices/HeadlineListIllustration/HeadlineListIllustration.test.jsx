@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import HeadlineListIllustration from './HeadlineListIllustration'
+
+/* eslint-disable no-undef */
 
 describe('HeadlineListIllustration', () => {
   it('renders correctly', () => {

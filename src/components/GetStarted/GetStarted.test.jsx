@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import { PureGetStarted as GetStarted } from './GetStarted'
+
+/* eslint-disable no-undef */
 
 describe('GetStarted', () => {
   it('renders correctly', () => {

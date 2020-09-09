@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import { PureFooter as Footer } from './Footer'
+
+/* eslint-disable no-undef */
 
 describe('Footer', () => {
   it('renders correctly', () => {

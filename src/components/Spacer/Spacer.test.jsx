@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import Spacer from './Spacer'
+
+/* eslint-disable no-undef */
 
 describe('Spacer', () => {
   it('renders correctly', () => {

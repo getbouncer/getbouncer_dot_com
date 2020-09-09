@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import IllustrationAndContent from './IllustrationAndContent'
+
+/* eslint-disable no-undef */
 
 describe('IllustrationAndContent', () => {
   it('renders correctly', () => {

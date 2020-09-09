@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import { PureHomeHero as HomeHero } from './HomeHero'
+
+/* eslint-disable no-undef */
 
 describe('HomeHero', () => {
   it('renders correctly', () => {

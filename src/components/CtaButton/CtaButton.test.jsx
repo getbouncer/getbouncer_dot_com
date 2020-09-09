@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import CtaButton from './CtaButton'
+
+/* eslint-disable no-undef */
 
 describe('CtaButton', () => {
   it('renders correctly', () => {

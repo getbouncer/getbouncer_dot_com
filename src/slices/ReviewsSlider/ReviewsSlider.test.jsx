@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import ReviewsSlider from './ReviewsSlider'
+
+/* eslint-disable no-undef */
 
 describe('ReviewsSlider', () => {
   it('renders correctly', () => {

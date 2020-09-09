@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import { PureSEO as SEO } from './SEO'
+
+/* eslint-disable no-undef */
 
 describe('SEOComponent', () => {
   it('renders correctly', () => {

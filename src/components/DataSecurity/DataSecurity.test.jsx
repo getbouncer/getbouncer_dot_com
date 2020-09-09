@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import DataSecurity from './DataSecurity'
+
+/* eslint-disable no-undef */
 
 describe('Data Security', () => {
   it('renders correctly', () => {

@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import ProductHero from './ProductHero'
+
+/* eslint-disable no-undef */
 
 describe('ProductHero', () => {
   it('renders correctly', () => {

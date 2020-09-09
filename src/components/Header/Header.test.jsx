@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import { PureHeader as Header } from './Header'
+
+/* eslint-disable no-undef */
 
 describe('Header', () => {
   it('renders correctly', () => {

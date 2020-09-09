@@ -1,7 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { describe, expect, it } from 'jest'
 import PlansComparison from './PlansComparison'
+
+/* eslint-disable no-undef */
 
 describe('PlansComparison', () => {
   it('renders correctly', () => {
